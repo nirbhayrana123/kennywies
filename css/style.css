@@ -5114,7 +5114,16 @@ a.button.border-only:hover {
 .bookssection .left-images {
     height: 530px;
 }
-
+.wordsendsicyel .contact-into {
+    padding: 0;margin-bottom: 10px; 
+}
+ .wordsendsicyel button.button {
+    margin-top: 0;
+}
+ .wordsendsicyel .form {
+    margin-top: 40px;
+    padding: 15px 40px;    background: #f9ede5;
+}
 /*********************Mobile styles ************************/
 @media (max-width: 1200px) {
 

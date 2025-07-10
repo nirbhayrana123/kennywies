@@ -417,7 +417,9 @@ img.logos-people6 {
 .vertyvery-box a.button:hover {
     box-shadow: 400px 0 0 0 #484137 inset;
 }
-
+.sidebar .popular-posts .post .text a {
+    color: #000;
+}
 .trauma h4 {
     margin-bottom: 12px;
     font-size: 1em;
@@ -1691,11 +1693,19 @@ h5.info-title {
 .description {
     margin-top: 30px;
 }
-
+a.buttobooksec
+ {
+    color: #c09867;
+        text-decoration: underline;
+    font-weight: 700;
+}
 .main-content h3 {
     margin-top: 30px;
+    font-size: 1.6rem;
 }
-
+.martyuiop h3 {
+    margin-top: 0;
+}
 .wellness-col.feature-box h3,
 .wellness-col.feature-box p,
 .wellness-col.feature-box i svg {
@@ -1771,6 +1781,7 @@ ul.checklist {
 
 .nutrition-content h3 {
     margin-top: 0;
+    font-size: 1.6rem;
 }
 
 .top-bar {
@@ -3590,11 +3601,15 @@ span.bolder {
     padding-top: 5px;
     padding-left: 55px;
 }
-
+.news-block-two .inner-box .lower-content p a
+ {
+    color: #c09867;
+}
 .news-block-two .inner-box .author-box .author-image {
     position: absolute;
     left: 0px;
     top: 0px;
+    width: 40px;
 }
 
 .news-block-two .inner-box .author-box {

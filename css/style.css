@@ -5055,6 +5055,23 @@ ul.features.full  {
 ul.features.full li { 
     font-size: 0.9em;
 }
+a.button.border-only {
+    background: transparent;
+    border: 2px solid #333;
+    color: #333;
+}
+a.button.border-only:hover {
+    color: #fff;
+}
+.who-we-are .button-row {
+    margin-bottom: 30px;
+}
+.who-we-are a.button {
+    margin-top: 0;
+}
+.bookssection .left-images {
+    height: 530px;
+}
 
 /*********************Mobile styles ************************/
 @media (max-width: 1200px) {

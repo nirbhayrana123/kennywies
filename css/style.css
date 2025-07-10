@@ -95,6 +95,12 @@ a {
     font-weight: 400;
 }
 
+
+
+
+
+
+
 .header.bgcolor ul.navmenu a {
     color: #000000;
 }
@@ -159,6 +165,32 @@ header.header.blacktext ul.navmenu li a {
     color: #000;
 }
 
+@media (max-width: 1300px) {
+ .container {
+        max-width: 1170px;
+        padding: 20px;
+      }
+}
+
+@media (max-width: 1024px) {
+      .container {
+        max-width: 900px;
+        padding: 20px;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        max-width: 700px;
+        padding: 15px;
+      }
+    }
+      @media (max-width: 480px) {
+      .container {
+        max-width: 100%;
+        padding: 10px;
+      }
+    }
 /**************header**********************************/
 .logo {
     display: flex;
@@ -1012,7 +1044,7 @@ section.into-section {
 section.into-section .wellness-col {
     background: #fff;
     border-radius: 10px;
-    max-width: 22em;
+    max-width: 100%;
     overflow: hidden;
 }
 
@@ -4484,7 +4516,7 @@ section.sourses-section .right-content h3 {
 .card {
     background: #fff;
     border-radius: 14px;
-    max-width: 22em;
+    max-width: 100%;
     overflow: hidden;
     box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
     transition: 0.5s;
@@ -5381,7 +5413,30 @@ section.why-choose-us.bookssection .video-boxes {
 
 }
 
-@media (max-width: 991px) {
+
+@media (max-width: 1100px) {
+.blog-grid {
+    grid-template-columns: 1fr;
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 1024px) {
     body {
         font-size: 14px;
     }
@@ -5469,7 +5524,10 @@ section.why-choose-us.bookssection .video-boxes {
     .works-sections .right {
         padding-left: 0px;
     }
-
+.video-boxes
+ {
+    width: 25%;
+}
 
     .left-about,
     .right-about,
@@ -5561,6 +5619,9 @@ section.why-choose-us.bookssection .video-boxes {
 }
 
 @media (max-width: 767px) {
+    .bookssection .left-images {
+    height: auto;
+}
     body {
         font-size: 13.3px;
     }
@@ -5785,7 +5846,7 @@ section.why-choose-us.bookssection .video-boxes {
 
     .video-box {
         margin-top: 30px;
-        width: 75%;
+        width: 100%;
         height: auto;
     }
 

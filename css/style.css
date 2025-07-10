@@ -103,7 +103,7 @@ header.header.bg .nav a:hover {
 }
 
 .button.whitebt {
-    box-shadow: 300px 0 0 0 #ffffff inset;
+    box-shadow: 360px 0 0 0 #ffffff inset;
     background-color: #ffffff00;
     border: 1px solid #fff;
     color: #000000;
@@ -413,7 +413,7 @@ img.logos-people6 {
 
 .button:hover {
     color: #ffffff;
-    box-shadow: 300px 0 0 0 #484137 inset;
+    box-shadow: 360px 0 0 0 #484137 inset;
 }
 
 .button {
@@ -1336,6 +1336,30 @@ h5.tag-line::after {
     color: #917a5a;
     font-size: 1em;
 }
+.flex-filing {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.flex-filing .form-group {
+    width: 49%;
+}
+.feelings-station button.button {
+    margin-top: 0;
+}
+.feelings-station {
+    background-color: #ccc;
+    padding: 10px;
+    border-radius: 15px;
+    margin-top: 25px;
+}
+.form-group label {
+    font-size: 0.8em;
+    color: #434343;
+    line-height: 1.7em;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+}
 
 .followers-item {
     display: flex;
@@ -2061,6 +2085,7 @@ iframe {
     grid-template-columns: 1fr 1fr 1fr;
     gap: 20px;
     margin-bottom: 60px;
+    margin-top: 60px;
 }
 
 .contactflexform {
@@ -2796,6 +2821,22 @@ a.cta-block:hover {
 a.cta-block h4 {
     color: #C09867;
 }
+.podcast-butt
+ {
+    padding-bottom: 30px;
+}
+.podcast-butt h4
+ {
+    font-size: 1.2em;
+    color: #fff;
+    font-weight: 400;
+}
+.flex-podcastbut {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
 
 a.cta-block:hover img {
     -webkit-transform: scale(1.1);
@@ -2814,7 +2855,7 @@ a.cta-block img {
 .book-banner {
     display: grid;
     grid-template-rows: auto;
-    grid-template-columns: 25% 1fr;
+    grid-template-columns: 40% 1fr;
     width: 100%;
     gap: 50px;
 }
@@ -2872,8 +2913,21 @@ section.mb-4 {
 
 .book-col1 img {
     border-radius: 20px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
 }
-
+.book-col1
+ {
+    position: relative;
+    overflow: hidden;
+    min-height: 500px;
+}
 */ .section-book-bonus h3 {
     text-transform: uppercase;
     letter-spacing: 1px;
@@ -4989,6 +5043,17 @@ section.kanny-content {
 .dropreletiv i {
     transition: 0.5s;
     margin-left: 5px;
+}
+.button-flex a {
+    margin-right: 15px;
+}
+ul.features.full  {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);  
+    background-color: #fff;
+}
+ul.features.full li { 
+    font-size: 0.9em;
 }
 
 /*********************Mobile styles ************************/

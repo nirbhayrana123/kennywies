@@ -3755,6 +3755,9 @@ main.pt-1.pt-4 {
     text-transform: capitalize;
     font-family: "Poppins", sans-serif;
 }
+.faq-wrapper .buttonsser {
+    margin-top: 35px;
+}
 .service-item-main a.overlay-box {
     position: absolute;
     content: '';

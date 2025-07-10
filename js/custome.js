@@ -304,7 +304,10 @@ $(document).ready(function () {
                 return `${m}:${s}`;
             }
         }); 
-    document.addEventListener("DOMContentLoaded", function () {
+
+
+        
+     document.addEventListener("DOMContentLoaded", function () {
     const playButtons = document.querySelectorAll(".video-play-button");
 
     playButtons.forEach(button => {
@@ -316,7 +319,7 @@ $(document).ready(function () {
         const videoSec = button.closest(".video-sec");
 
         videoSec.innerHTML = `
-          <iframe width="100%" height="100%"
+          <iframe width="100%" height="360"
             src="${videoURL}"
             frameborder="0"
             allow="autoplay; encrypted-media"

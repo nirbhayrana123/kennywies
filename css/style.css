@@ -1684,7 +1684,23 @@ h5.info-title {
 .contact-box.background a:hover svg {
     margin-left: 7px;
 }
-
+.post-meta {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.buttonsser {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    gap: 10px;
+}
+.buttonsser a {
+    color: #c09867;
+    text-decoration: underline;
+    font-size: 0.8em;
+    font-weight: 500;
+}
 .service-item-main h4 {
     margin-bottom: 20px;
     font-size: 1.2em;
@@ -3696,15 +3712,20 @@ main.pt-1.pt-4 {
 .sidebar-title-two {
     position: relative;
     margin-bottom: 30px;
+    text-align: center;
 }
-
+.popular-posts .sidebar-title-two {
+    text-align: left;
+}
 .about-widget .image {
     position: relative;
     width: 140px;
     height: 140px;
     margin: 0 auto;
 }
-
+.add-widget .sidebar-title-two {
+    text-align: left;
+}
 .sidebar-title-two h5 {
     padding-bottom: 15px;
     border-bottom: 1px solid #efefef;
@@ -3714,7 +3735,45 @@ main.pt-1.pt-4 {
     position: relative;
     text-align: center;
 }
-
+.service-item-main figure.post-thumb {
+    width: 80px;
+    position: relative;
+}
+.service-item-main .text {
+    position: relative;
+   margin-bottom: 5px;
+}
+.service-item-main  article.post { 
+    border-bottom: 1px solid #917a5a !important; 
+}
+.service-item-main .text a {
+    font-weight: 400;
+    line-height: 1em;
+    margin: 0px 0px 0px;
+    font-size: 14px;
+    color: #000;
+    text-transform: capitalize;
+    font-family: "Poppins", sans-serif;
+}
+.service-item-main a.overlay-box {
+    position: absolute;
+    content: '';
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    display: block;
+    color: #000;
+    font-size: 20px;
+    opacity: 0;
+    text-align: center;
+    transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    background-color: rgba(51, 51, 51, 0.70);
+}
 .about-widget .lower-content h6 {
     margin-top: 25px;
 }
@@ -4243,10 +4302,7 @@ section.sourses-section .right-content h3 {
     min-width: 300px;
 }
 
-.description {
-    font-size: 15px;
-    line-height: 1.6;
-    color: #666;
+.description { 
     margin-bottom: 24px;
 }
 

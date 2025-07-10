@@ -176,7 +176,7 @@ a.logo-brand img {
 }
 
 .iframe-row {
-    width: 100%; 
+    width: 100%;
 }
 
 a.sociallink {
@@ -527,7 +527,7 @@ section.book-section.podcast-banner .book-cintent {
 .audio-player-icon i {
     font-size: 1em;
     color: #ffffff;
-    background-color: #bb825782;
+    background-color: #917a5a;
     padding: 5px;
     border-radius: 48px;
     width: 50px;
@@ -536,6 +536,7 @@ section.book-section.podcast-banner .book-cintent {
     align-items: center;
     justify-content: center;
 }
+
 
 /*****************************/
 .features-section {
@@ -4773,18 +4774,26 @@ a.learn-more-link:hover {
     width: 50%;
 }
 
+.touimg {
+    display: flex;
+    gap: 15px;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
 .boxlist {
     display: flex;
     justify-content: center;
     flex-shrink: 0;
     position: relative;
-    background-color: #c09867;
     width: 40px;
     height: 40px;
     align-items: center;
     margin-right: 15px;
-    color: #fff;
+    color: #917a5a;
     border-radius: 30px;
+    background-color:
+        color-mix(in srgb, #917a5a, transparent 90%);
 }
 
 .listver {
@@ -4792,6 +4801,9 @@ a.learn-more-link:hover {
     display: flex;
     margin-bottom: 20px;
     transition: transform .85s cubic-bezier(.23, 1, .32, 1), background .3s, border .3s, border-radius .3s, box-shadow .3s;
+    background: linear-gradient(135deg,
+            color-mix(in srgb, #917a5a, transparent 95%),
+            color-mix(in srgb, #917a5a, transparent 90%));
 }
 
 .listver:hover {
@@ -5082,22 +5094,39 @@ ul.features.full {
 ul.features.full li {
     font-size: 0.9em;
 }
+
 a.button.border-only {
     background: transparent;
     border: 2px solid #333;
     color: #333;
 }
+
 a.button.border-only:hover {
     color: #fff;
 }
+
 .who-we-are .button-row {
     margin-bottom: 30px;
 }
+
 .who-we-are a.button {
     margin-top: 0;
 }
+
 .bookssection .left-images {
     height: 530px;
+}
+
+.bookssection a.button {
+    margin-top: 0;
+}
+
+.button-row.top3 {
+    margin-top: 70px;
+}
+
+section.why-choose-us.bookssection .video-boxes {
+    right: -80px;
 }
 
 /*********************Mobile styles ************************/

@@ -5044,6 +5044,17 @@ section.kanny-content {
     transition: 0.5s;
     margin-left: 5px;
 }
+.button-flex a {
+    margin-right: 15px;
+}
+ul.features.full  {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);  
+    background-color: #fff;
+}
+ul.features.full li { 
+    font-size: 0.9em;
+}
 
 /*********************Mobile styles ************************/
 @media (max-width: 1200px) {

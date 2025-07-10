@@ -329,7 +329,7 @@ section.banner {
 section.banner::after {
     content: "";
     background-color: transparent;
-    background-image: linear-gradient(90deg, #8d683b8f 51%, rgba(0, 0, 0, 0) 70%);
+    background-image: linear-gradient(90deg, #0027708f 51%, rgba(0, 0, 0, 0) 70%);
     opacity: 0.76;
     transition: background 0.3s, border-radius 0.3s, opacity 0.3s;
     position: absolute;
@@ -402,9 +402,19 @@ img.logos-people6 {
     z-index: 2;
 }
 
+.vertyvery-box a.button:hover {
+    box-shadow: 400px 0 0 0 #484137 inset;
+}
+
+.trauma h4 {
+    margin-bottom: 12px;
+    font-size: 1em;
+    color: #32220b;
+}
+
 .button:hover {
     color: #ffffff;
-    box-shadow: 400px 0 0 0 #484137 inset;
+    box-shadow: 300px 0 0 0 #484137 inset;
 }
 
 .button {
@@ -984,32 +994,12 @@ section.into-section {
 
 section.into-section .wellness-col {
     background: #fff;
-    border-radius: 0.75em;
-    box-shadow: 0 0.25em 1em rgba(0, 0, 0, 0.08);
-    padding: 1em;
+    border-radius: 10px;
     max-width: 22em;
     overflow: hidden;
 }
 
-.card-title a {
-    color: #32220b;
-}
 
-.wellness-col a:hover {
-    color: #ffffff;
-    background-color: #826c4de0;
-}
-
-.wellness-col a {
-    color: #ffffff;
-    font-size: 0.7em;
-    margin-top: 19px;
-    display: inline-block;
-    background-color: #826c4d;
-    padding: 7px 20px;
-    border-radius: 32px;
-    transition: 0.5s;
-}
 
 .wellness-col i {
     width: 60px;
@@ -1045,7 +1035,7 @@ section.into-section .wellness-col {
 }
 
 .trauma {
-    padding-top: 20px;
+    padding: 23px;
 }
 
 .wellness-col i svg {
@@ -1057,6 +1047,8 @@ section.into-section .wellness-col {
 
 .wellness-col p {
     color: #000;
+    font-size: 0.7em;
+    margin-bottom: 15px;
 }
 
 .left-group,
@@ -1164,6 +1156,24 @@ section.into-section .wellness-col {
     bottom: 0px;
 }
 
+.video-box-row ul li::after {
+    position: absolute;
+    content: "";
+    background-color: #c09867;
+    height: 7px;
+    width: 7px;
+    left: -20px;
+    top: 8px;
+    border-radius: 15px;
+}
+
+.video-box-row ul li {
+    position: relative;
+    margin-bottom: 8px;
+}
+.video-box-row p {
+    font-size: 0.7em;
+}
 /************************end slider*****************************/
 /************ABOUT******/
 section.aboutus {
@@ -1182,10 +1192,10 @@ section.aboutus {
     position: absolute;
     background: #f9f6f1;
     width: 60%;
-    height: 86%;
+    height: 100%;
     right: 0;
-    top: 17%;
-    z-index: 0;
+    top: 11%;
+    z-index: -1;
 }
 
 img.award-star {
@@ -1204,8 +1214,8 @@ img.award-star {
 .video-box-row {
     display: flex;
     justify-content: space-between;
-    gap: 30px;
-    margin-top: 60px;
+    gap: 10px;
+    margin-top: 50px;
 }
 
 .left .shine-effect {
@@ -1215,7 +1225,6 @@ img.award-star {
 .award-badge {
     position: absolute;
     bottom: 0;
-    background: #5e7130;
     color: #fff;
     padding: 40px 18px;
     font-weight: 500;
@@ -1225,6 +1234,10 @@ img.award-star {
     gap: 20px;
     width: 60%;
     line-height: 1.2em;
+    background-color:
+        color-mix(in srgb, #000000, transparent 54%);
+    backdrop-filter: blur(5px);
+    box-shadow: 0 20px 40px color-mix(in srgb, #ffffff, transparent 85%);
 }
 
 p.left-br {
@@ -1249,7 +1262,7 @@ p.left-br::after {
 }
 
 h5.tag-line {
-    color: #C09867;
+    color: #917a5a;
     font-size: 0.7em;
     letter-spacing: 2px;
     font-weight: 700;
@@ -1270,7 +1283,7 @@ h5.tag-line {
 h5.tag-line::after {
     content: "";
     position: absolute;
-    background-color: #C09867;
+    background-color: #917a5a;
     width: 45px;
     max-height: 1px;
     left: 0;
@@ -1395,6 +1408,7 @@ body.courses {
 
 section.courses-master-classes {
     padding: 60px 0px;
+    background-color: #f5f4f1;
 }
 
 .grid3 {
@@ -2307,8 +2321,7 @@ section.bg-colors {
 
 .right {
     flex: 1;
-    padding-left: 40px;
-    top: 90px;
+    padding-left: 40px; 
 }
 
 .step-line {
@@ -2317,7 +2330,7 @@ section.bg-colors {
     top: 50px;
     bottom: 0;
     width: 2px;
-    background: #ccc;
+    background: #c1b7a663;
 }
 
 .step.active p {
@@ -2330,9 +2343,14 @@ section.bg-colors {
     margin-bottom: 30px;
 }
 
+.step.active .step-number {
+    background-color: #8f7959;
+    color: #ffffff;
+}
+
 .step-number {
     position: absolute;
-    left: -43px;
+    left: -42px;
     top: 19px;
     width: 50px;
     height: 50px;
@@ -2340,13 +2358,14 @@ section.bg-colors {
     color: #000000;
     border-radius: 50%;
     text-align: center;
-    line-height: 29px;
+    line-height: 25px;
     font-weight: bold;
     font-size: 1em;
     display: flex;
     align-items: center;
     justify-content: center;
     transition: 1s all ease;
+    padding-bottom: 8px;
 }
 
 f .step.active .step-number {
@@ -2362,11 +2381,11 @@ f .step.active .step-number {
     transition: 1s all ease;
 }
 
-.step.active .step-content  {
+.step.active .step-content {
     background-color: #917a5a;
     color: white;
 }
- 
+
 
 
 
@@ -2381,7 +2400,6 @@ f .step.active .step-number {
 .paddings {
     padding-top: 50px;
     background-color: #F2EBDE;
-    margin-top: 20px;
     position: relative;
     z-index: 2;
 }
@@ -2494,9 +2512,9 @@ body.blog .blog-post h3 {
     gap: 25px;
 }
 
-.blog-img {
-    overflow: hidden;
+.blog-img { 
     width: 65%;
+    min-width: 250px;
     height: 100%;
     border-radius: 20px;
 }
@@ -2711,13 +2729,14 @@ section#clendly {
 
 ul.covered-list {
     margin-top: 30px;
-    display: grid
-;
+    display: grid;
     gap: 15px;
 }
- html {
-      scroll-behavior: smooth; 
-    }
+
+html {
+    scroll-behavior: smooth;
+}
+
 ul.covered-list li::before {
     content: "✔";
     color: #ffffff;
@@ -2733,7 +2752,7 @@ ul.covered-list li::before {
     min-height: 20px;
 }
 
- 
+
 ul.covered-list li {
     display: flex;
     align-items: center;
@@ -2745,7 +2764,7 @@ ul.covered-list li {
     padding-top: 70px;
 }
 
- 
+
 
 section.section-panel {
     padding: 60px 0;
@@ -4313,11 +4332,26 @@ section.sourses-section .right-content h3 {
 /***************************corses list amt************/
 .card {
     background: #fff;
-    border-radius: 0.75em;
-    box-shadow: 0 0.25em 1em rgba(0, 0, 0, 0.08);
-    padding: 1em;
+    border-radius: 14px;
     max-width: 22em;
     overflow: hidden;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+    transition: 0.5s;
+}
+
+.card:hover {
+    margin-top: -10px;
+}
+
+.card-body h4 {
+    font-size: 1em;
+    margin-bottom: 5px;
+    color: #32220b;
+}
+
+.card-body p {
+    font-size: 0.7em;
+    margin-bottom: 10px;
 }
 
 .card img.preview {
@@ -4327,11 +4361,12 @@ section.sourses-section .right-content h3 {
 }
 
 .card-body {
-    padding: 1.25em 0;
+    padding: 20px;
 }
 
+
 .card-body .stars {
-    color: #f59e0b;
+    color: #c09867;
     font-size: 0.7em;
     margin-bottom: 0.5em;
     display: flex;
@@ -4372,6 +4407,22 @@ section.sourses-section .right-content h3 {
 
 .info i {
     margin-right: 5px;
+    color: #917a5a;
+}
+
+a.learn-more-link {
+    color: #917a5a;
+    padding: 8px 13px;
+    border: 1px solid color-mix(in srgb, #917a5a, transparent 70%);
+    border-radius: 6px;
+    text-decoration: none;
+    font-size: 0.85rem;
+    transition: all 0.3s ease;
+}
+
+a.learn-more-link:hover {
+    background-color: #917a5a;
+    color: #fff;
 }
 
 .card .info svg {
@@ -4418,12 +4469,9 @@ section.sourses-section .right-content h3 {
 }
 
 .author-info {
-    font-size: 0.6em;
-}
-
-.author-info span {
+    font-size: 0.7em;
     font-weight: 500;
-    color: #111827;
+    font-family: 'Poppins';
 }
 
 .price-row {
@@ -4502,8 +4550,8 @@ section.sourses-section .right-content h3 {
 
 .rbt-badge-3 {
     position: absolute;
-    bottom: 23px;
-    right: 20px;
+    bottom: -27px;
+    right: 5px;
     height: 60px;
     width: 60px;
     border-radius: 100%;
@@ -5097,7 +5145,7 @@ section.kanny-content {
         padding-top: 0px;
     }
 
- 
+
 
     .boximg {
         width: 100%;
@@ -5561,7 +5609,7 @@ section.kanny-content {
         padding: 25px;
     }
 
- 
+
 
     .boximg.content {
         text-align: center;

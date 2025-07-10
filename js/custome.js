@@ -219,7 +219,21 @@ $(window).scroll(function () {
 });
 
 
- 
+ $(window).scroll(function () {
+  var scrollTop = $(this).scrollTop();
+  var windowHeight = $(window).height();
+  var scrollMiddle = scrollTop + windowHeight / 2;
+
+  $('.step').each(function () {
+    var offsetTop = $(this).offset().top;
+    var offsetBottom = offsetTop + $(this).outerHeight();
+
+    if (scrollMiddle >= offsetTop && scrollMiddle < offsetBottom) {
+      $('.step').removeClass('active');
+      $(this).addClass('active');
+    }
+  });
+});
  
 
 ////////////////tab//////////////////

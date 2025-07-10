@@ -3708,7 +3708,9 @@ main.pt-1.pt-4 {
     border: 1px solid #efefef;
     background-color: #fff;
 }
-
+.video-sec iframe{
+    height: 100%;
+}
 .sidebar-title-two {
     position: relative;
     margin-bottom: 30px;

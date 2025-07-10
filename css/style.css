@@ -104,7 +104,7 @@ header.header.bg .nav a:hover {
 }
 
 .button.whitebt {
-    box-shadow: 300px 0 0 0 #ffffff inset;
+    box-shadow: 360px 0 0 0 #ffffff inset;
     background-color: #ffffff00;
     border: 1px solid #fff;
     color: #000000;
@@ -414,7 +414,7 @@ img.logos-people6 {
 
 .button:hover {
     color: #ffffff;
-    box-shadow: 300px 0 0 0 #484137 inset;
+    box-shadow: 360px 0 0 0 #484137 inset;
 }
 
 .button {
@@ -2820,6 +2820,22 @@ a.cta-block:hover {
 a.cta-block h4 {
     color: #C09867;
 }
+.podcast-butt
+ {
+    padding-bottom: 30px;
+}
+.podcast-butt h4
+ {
+    font-size: 1.2em;
+    color: #fff;
+    font-weight: 400;
+}
+.flex-podcastbut {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
 
 a.cta-block:hover img {
     -webkit-transform: scale(1.1);

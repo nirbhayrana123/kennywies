@@ -1316,10 +1316,41 @@ h5.tag-line::after {
     color: #C09867;
     margin-right: 6px;
 }
-
+.form-group input {
+    width: 100%;
+    padding: 18px;
+    margin-bottom: 12px;
+    border: 1px solid #cccccc73;
+    border-radius: 5px;
+    outline: none;
+}
 .followers-item i {
     color: #C09867;
     font-size: 1em;
+}
+.flex-filing {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.flex-filing .form-group {
+    width: 49%;
+}
+.feelings-station button.button {
+    margin-top: 0;
+}
+.feelings-station {
+    background-color: #ccc;
+    padding: 10px;
+    border-radius: 15px;
+    margin-top: 25px;
+}
+.form-group label {
+    font-size: 0.8em;
+    color: #434343;
+    line-height: 1.7em;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
 }
 
 .followers-item {
@@ -2045,6 +2076,7 @@ iframe {
     grid-template-columns: 1fr 1fr 1fr;
     gap: 20px;
     margin-bottom: 60px;
+    margin-top: 60px;
 }
 
 .contactflexform {
@@ -2787,7 +2819,7 @@ a.cta-block img {
 .book-banner {
     display: grid;
     grid-template-rows: auto;
-    grid-template-columns: 25% 1fr;
+    grid-template-columns: 40% 1fr;
     width: 100%;
     gap: 50px;
 }
@@ -2845,8 +2877,21 @@ section.mb-4 {
 
 .book-col1 img {
     border-radius: 20px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
 }
-
+.book-col1
+ {
+    position: relative;
+    overflow: hidden;
+    min-height: 500px;
+}
 */ .section-book-bonus h3 {
     text-transform: uppercase;
     letter-spacing: 1px;

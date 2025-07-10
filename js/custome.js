@@ -235,5 +235,26 @@ $(document).ready(function () {
 });
 
 
+    document.addEventListener("DOMContentLoaded", function () {
+    const playButtons = document.querySelectorAll(".video-play-button");
 
+    playButtons.forEach(button => {
+      button.addEventListener("click", function (e) {
+        e.preventDefault();
+
+        const videoURL = button.getAttribute("data-video") + "?autoplay=1&rel=0";
+
+        const videoSec = button.closest(".video-sec");
+
+        videoSec.innerHTML = `
+          <iframe width="100%" height="100%"
+            src="${videoURL}"
+            frameborder="0"
+            allow="autoplay; encrypted-media"
+            allowfullscreen>
+          </iframe>
+        `;
+      });
+    });
+  });
  

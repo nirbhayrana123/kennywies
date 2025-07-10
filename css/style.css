@@ -35,7 +35,8 @@ h4 {
     font-weight: 700;
 }
 
-a.active-nav, a.active-nav i {
+a.active-nav,
+a.active-nav i {
     color: #917a5a !important;
 }
 
@@ -174,14 +175,26 @@ a.logo-brand img {
     filter: brightness(0) saturate(100%);
 }
 
+.iframe-row {
+    width: 100%; 
+}
+
 a.sociallink {
     font-size: 20px;
+}
+
+.iframe-row iframe {
+    height: 180px;
 }
 
 .flexsocial {
     display: flex;
     align-items: center;
     gap: 10px;
+}
+
+.audio-player iframe {
+    height: 100px !important;
 }
 
 header.header {
@@ -1170,9 +1183,11 @@ section.into-section .wellness-col {
     position: relative;
     margin-bottom: 8px;
 }
+
 .video-box-row p {
     font-size: 0.7em;
 }
+
 /************************end slider*****************************/
 /************ABOUT******/
 section.aboutus {
@@ -1328,31 +1343,38 @@ h5.tag-line::after {
     color: #C09867;
     margin-right: 6px;
 }
+
 .flex-about .video-box-row {
     margin-top: 23px;
     padding-left: 20px;
 }
-.followers-item i  {
+
+.followers-item i {
     color: #917a5a;
     font-size: 1em;
 }
+
 .flex-filing {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
+
 .flex-filing .form-group {
     width: 49%;
 }
+
 .feelings-station button.button {
     margin-top: 0;
 }
+
 .feelings-station {
     background-color: #ccc;
     padding: 10px;
     border-radius: 15px;
     margin-top: 25px;
 }
+
 .form-group label {
     font-size: 0.8em;
     color: #434343;
@@ -2316,7 +2338,7 @@ section.bg-colors {
 
 .right {
     flex: 1;
-    padding-left: 40px; 
+    padding-left: 40px;
 }
 
 .step-line {
@@ -2507,7 +2529,7 @@ body.blog .blog-post h3 {
     gap: 25px;
 }
 
-.blog-img { 
+.blog-img {
     width: 65%;
     min-width: 250px;
     height: 100%;
@@ -2770,13 +2792,16 @@ section.section-panel {
     display: inline-block;
     overflow: hidden;
 }
+
 .button-row.spotify {
     margin-top: 25px;
 }
+
 .button-row.spotify a {
     font-size: 0.8em;
-    text-decoration: underline; 
+    text-decoration: underline;
 }
+
 .shine-effect::before {
     content: "";
     position: absolute;
@@ -2821,16 +2846,17 @@ a.cta-block:hover {
 a.cta-block h4 {
     color: #C09867;
 }
-.podcast-butt
- {
+
+.podcast-butt {
     padding-bottom: 30px;
 }
-.podcast-butt h4
- {
+
+.podcast-butt h4 {
     font-size: 1.2em;
     color: #fff;
     font-weight: 400;
 }
+
 .flex-podcastbut {
     display: flex;
     align-items: center;
@@ -2922,12 +2948,13 @@ section.mb-4 {
     object-fit: cover;
     object-position: top;
 }
-.book-col1
- {
+
+.book-col1 {
     position: relative;
     overflow: hidden;
     min-height: 500px;
 }
+
 */ .section-book-bonus h3 {
     text-transform: uppercase;
     letter-spacing: 1px;
@@ -3355,8 +3382,7 @@ span.bolder {
     border-radius: 50%;
     width: 40px;
     height: 40px;
-    display: flex
-;
+    display: flex;
     align-items: center;
     justify-content: center;
     padding: 10px;
@@ -3489,11 +3515,10 @@ span.bolder {
     bottom: 20px;
     right: 20px;
     text-align: center;
-    background-color: 
- color-mix(in srgb, #000000c7, transparent 54%);
+    background-color:
+        color-mix(in srgb, #000000c7, transparent 54%);
     backdrop-filter: blur(5px);
-    box-shadow: 0 20px 40px 
- color-mix(in srgb, #ffffff, transparent 85%);
+    box-shadow: 0 20px 40px color-mix(in srgb, #ffffff, transparent 85%);
 }
 
 .rightdesigncontent img {
@@ -4637,20 +4662,19 @@ a.learn-more-link:hover {
     font-size: 0.8em;
     color: #917a5a;
     width: 22px;
-    display: flex
-;
+    display: flex;
     margin-right: 5px;
     align-items: center;
     justify-content: center;
     height: 22px;
     border-radius: 20px;
-    background-color: 
- color-mix(in srgb, #917a5a, transparent 90%);
+    background-color:
+        color-mix(in srgb, #917a5a, transparent 90%);
 }
 
 .divider {
     color: #917a5a;
-} 
+}
 
 .images {
     flex: 1 1 45%;
@@ -5044,15 +5068,18 @@ section.kanny-content {
     transition: 0.5s;
     margin-left: 5px;
 }
+
 .button-flex a {
     margin-right: 15px;
 }
-ul.features.full  {
+
+ul.features.full {
     display: grid;
-    grid-template-columns: repeat(1, 1fr);  
+    grid-template-columns: repeat(1, 1fr);
     background-color: #fff;
 }
-ul.features.full li { 
+
+ul.features.full li {
     font-size: 0.9em;
 }
 

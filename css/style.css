@@ -83,7 +83,7 @@ ul.navmenu li a {
 }
 
 p {
-    font-size: 0.8em;
+    font-size: 1em;
     color: #434343;
     line-height: 1.7em;
     font-family: "Poppins", sans-serif;
@@ -638,6 +638,7 @@ section.book-section.podcast-banner .book-cintent {
     background: #0000005e;
     position: absolute;
     inset: 0;
+    z-index: -1;
 }
 
 section.book-section.podcast-banner .audio-podcast {
@@ -1801,12 +1802,7 @@ a.buttobooksec {
     align-items: flex-start;
     gap: 40px;
     margin: 45px 0px;
-}
-
-.bg-gry {
-    background-color: #f5f4f1;
-}
-
+} 
 .feature {
     margin-bottom: 20px;
 }
@@ -2742,8 +2738,7 @@ ul.features {
 ul.features li {
     display: flex;
     align-items: center;
-    gap: 10px;
-    font-size: 0.8em;
+    gap: 10px; 
 }
 
 .listin-img {
@@ -3093,7 +3088,53 @@ section.mb-4 {
     align-items: start;
     gap: 40px;
 }
+.flexbooklist {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+.booklistcontent h5 {
+    font-size: 1.3rem;
+    color: #000;
+}
+.booklisting {
+    border: 1px solid #991a34;
+    border-radius: 15px;
+}
 
+.videotestiomonials p a {
+    color: #BBA056;
+}
+.videotestiomonials {
+    text-align: center;
+}
+.booklistcontent {
+    padding: 10px;
+}
+section.podcastvideos {
+    padding: 100px 0px;
+}
+.booklistcontent h6 {
+    font-size: 1rem;
+    margin: 10px 0px;
+}
+.flexbuttoons {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 13px;
+    padding: 10px;
+}
+.flexbuttoons a.button {
+    margin: 0; 
+}
+section.recommended-readinglist {
+    padding: 100px 0px;
+}
+.booklisting-img img {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
 .rigth-realpandemic {
     max-width: 100%;
     flex: 1;
@@ -3145,6 +3186,42 @@ img.worst-day-text {
     transition: 2.5s;
     animation: animName 50s linear infinite;
 }
+
+.resourcsertymain {
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 40% 1fr;
+    width: 100%;
+    gap: 50px;
+}
+
+.leftresourcsertymain {
+    position: relative;
+    overflow: hidden;
+    min-height: 500px;
+}
+
+.leftresourcsertymain img {
+    border-radius: 20px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+}
+.righttresourcsertymain h2 {
+    font-size: 3em;
+}
+section.resourcesmain-section {
+    padding: 60px 0px;
+}
+.righttresourcsertymain p a {
+    color: #BBA056;
+}
+
 
 @keyframes animName {
     0% {
@@ -5297,11 +5374,7 @@ ul.features.full {
     grid-template-columns: repeat(2, 1fr);
     background-color: transparent;
 }
-
-ul.features.full li {
-    font-size: 0.9em;
-}
-
+ 
 a.button.border-only {
     background: transparent;
     border: 2px solid #991A34;

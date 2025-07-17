@@ -216,7 +216,7 @@ a.sociallink {
 }
 
 .iframe-row iframe {
-    height: 180px;
+    height: 160px;
 }
 
 .flexsocial {
@@ -656,11 +656,11 @@ section.book-section.podcast-banner .seek-fill {
 
 section.book-section.podcast-banner .audio-podcast i,
 section.book-section.podcast-banner .audio-player .time {
-    color: #bb8961;
+    color: #991a34;
 }
 
 a.detail2 {
-    color: #BBA056;
+    color: #991a34;
     font-size: 0.8em;
 }
 
@@ -2786,19 +2786,15 @@ section.sesson {
 }
 
 
-
-.sesson-content p {
-    margin: 15px 0;
-}
+ 
 
 ul.features {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 20px 30px;
-    background-color: #ffeef2;
+    /* background-color: #ffeef2; */
     padding: 30px 15px;
-    margin-top: 20px;
-    border-left: 5px solid #ff1654;
+    margin-top: 20px; 
 }
 
 ul.features li {
@@ -2807,12 +2803,10 @@ ul.features li {
     gap: 10px;
     font-size: 0.8em;
 }
-
-ul.features li::before {
-    content: "✔";
-    color: #ff1654;
+.listin-img {
+    width: 25px;
 }
-
+ 
 section#clendly {
     text-align: center;
     padding: 50px 0;
@@ -4220,7 +4214,9 @@ article.post {
 .stats .stat-item:last-child {
     border-right: 0;
 }
-
+section.stats.hidens {
+    display: none;
+}
 /*****************Podcast**********************/
 .flex-whatwe {
     display: flex;
@@ -4599,21 +4595,6 @@ section.sourses-section .right-content h3 {
     color: #BBA056;
 }
 
-a.learn-more-link {
-    color: #fff;
-    padding: 8px 13px; 
-    border-radius: 6px;
-    text-decoration: none;
-    font-size: 0.85rem;
-    transition: all 0.3s ease;
-    background-color: #991A34;
-}
-
-a.learn-more-link:hover {
-    background-color: #BBA056;
-    color: #fff;
-}
-
 .card .info svg {
     margin-right: 0.25em;
 }
@@ -4696,8 +4677,14 @@ a.learn-more-link:hover {
     border: 0;
     position: relative;
 }
-
-
+.blog-detailsdhidee {
+    display: none;
+}
+h5.mtfyt {
+    margin-top: 12px;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
 .video-boxes .audio-player button::before {
     content: "";
     position: absolute;
@@ -4719,17 +4706,20 @@ a.learn-more-link:hover {
 }
 
 
-
+a.more-link.button {
+    margin-top: 10px;
+}
 
 .learn-more-link {
-    color: #1f2937;
     font-weight: 500;
     text-decoration: none;
-    display: inline-flex;
+    display: flex;
     align-items: center;
     gap: 0.3em;
+    justify-content: center;
     font-size: 0.875em;
     transition: color 0.2s;
+    margin-top: 0;
 }
 
 .learn-more-link .arrow {
@@ -5266,8 +5256,8 @@ section.kanny-content {
 
 ul.features.full {
     display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    background-color: #fff;
+    grid-template-columns: repeat(2, 1fr);
+    background-color: transparent;
 }
 
 ul.features.full li {

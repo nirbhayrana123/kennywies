@@ -2492,19 +2492,16 @@ section.self-development::after {
     margin: 35px 0;
 }
 
-.self-development-content h5 {
-    font-weight: 600;
-    color: #ffffff;
-    font-size: 1em;
-    text-transform: uppercase;
-}
+ 
 
 .self-development-content p {
     color: #fff;
     line-height: 1.5em;
     margin-bottom: 40px;
 }
-
+.card-image-grey-bg iframe {
+    height: 100%;
+}
 
 a.start-bt {
     color: #000000;

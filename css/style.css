@@ -1620,12 +1620,13 @@ h5.info-title {
 
 .box3 {
     background-color: #f8f1ed;
-    padding: 40px;
-    margin-bottom: 30px;
+    padding: 31px;
     height: 300px;
     display: flex;
     flex-direction: column;
     gap: 7px;
+    margin-top: -150px;
+    border-radius: 10px;
 }
 
 .box3 h4 {
@@ -1740,7 +1741,7 @@ h5.info-title {
 
 
 
- .buttonsser {
+.buttonsser {
     color: #BBA056;
     text-decoration: underline;
     font-size: 0.8em;
@@ -1961,7 +1962,7 @@ a:hover {
 
 .contactsection {
     padding: 60px 0;
-    background: #f7f7f7;
+    background: #f7f3ed;
 }
 
 .contact-into {
@@ -2622,6 +2623,48 @@ a.post-link {
 }
 
 /***********BOOK************/
+.formcontainerrow {
+    margin-top: 30px;
+}
+
+.formcontainer {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    margin: 13px 0;
+}
+
+p.bolder {
+    font-weight: 700;
+    font-size: 1em;
+}
+
+.formcontainer input[type="text"],
+.formcontainer input[type="email"] {
+    padding: 13px 15px;
+    border: 1px solid #bbb;
+    border-radius: 4px;
+    font-size: 15px;
+    width: 210px;
+    outline: none;
+}
+
+button.button.submit-btn {
+    cursor: pointer;
+    margin-top: 0;
+    border-radius: 4px;
+}
+
+
+
+
+
+
+
+
+
+
+
 section.book-section.page {
     padding: 100px 0;
 }
@@ -2964,10 +3007,10 @@ section.mb-4 {
 .book-col1 {
     position: relative;
     overflow: hidden;
-    min-height: 500px;
+    min-height: 580px;
 }
 
-*/ .section-book-bonus h3 {
+.section-book-bonus h3 {
     text-transform: uppercase;
     letter-spacing: 1px;
 }
@@ -2984,6 +3027,8 @@ section.mb-4 {
 .book-item-content {
     padding: 20px;
 }
+
+
 
 /***************card-section************/
 .card-section {
@@ -4047,6 +4092,9 @@ article.post {
 }
 
 /********healing-inner-pages*************/
+.healing-inner-pages.height-7 {
+    height: 75vh;
+}
 
 .healing-inner-pages {
     background-size: cover;
@@ -4546,35 +4594,24 @@ section.sourses-section .right-content h3 {
 .discover-btn:hover {
     background-color: #e15336;
 }
-
-
-
-.year-box h3 {
-    color: #fff;
+.sandstone-logo-blk {
+    margin-top: 20px;
 }
-
-.year-box h5 {
-    font-size: 0.9em;
-    color: #fff;
-}
-
-.year-box {
-    background-color: #BBA056;
-    padding: 15px 20px;
-    text-align: center;
-    border-radius: 20px;
-}
-
 .business-coach {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: space-between;
-    padding-top: 50px;
+    padding-top: 110px;
+    width: 65%;
+    gap: 30px; 
 }
-
-.content-business-coach {
-    padding-left: 10px;
-    border-left: 2px solid #BBA056;
+.exprince img {
+    width: 290px;
+    border-radius: 10px;
+    border: 3px solid #991a34;
+}
+ .content-business-coach h4 {
+    margin-bottom: 10px;
 }
 
 .content-business-coach h5 {
@@ -4582,19 +4619,22 @@ section.sourses-section .right-content h3 {
     line-height: 1.5;
 }
 
-.content-business-coach h5 span {
-    font-size: 0.6em;
-}
+
 
 /************hero section amt****************/
 .hero-section {
-    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../images/laptop-meeting.jpg) center / cover no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../images/14.jpg) center / cover no-repeat;
     color: #fff;
     text-align: center;
     padding: 5em 0em 2em;
     position: relative;
-    margin-bottom: 50px;
 }
+
+.right-wordsendcycal.abslut {
+    position: absolute;
+    width: 200px;
+}
+
 
 .hero-section h3 {
     max-width: 50em;
@@ -4608,30 +4648,7 @@ section.sourses-section .right-content h3 {
     line-height: 1.6;
 }
 
-.client-logos {
-    position: relative;
-    bottom: -4.125em;
-    background-color: #fff;
-    padding: 1.25em 1.875em;
-    border-radius: 3.125em;
-    box-shadow: 0 0.3125em 1.875em rgba(0, 0, 0, 0.1);
-    display: flex;
-    gap: 1.875em;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
-}
 
-.client-logos img {
-    height: 1.875em;
-    /* 30px */
-    object-fit: contain;
-    transition: transform 0.2s ease;
-}
-
-.client-logos img:hover {
-    transform: scale(1.05);
-}
 
 /***************************corses list amt************/
 .card {

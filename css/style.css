@@ -1724,14 +1724,9 @@ h5.info-title {
     justify-content: space-between;
 }
 
-.buttonsser {
-    display: flex;
-    align-items: center;
-    justify-content: end;
-    gap: 10px;
-}
 
-.buttonsser a {
+
+ .buttonsser {
     color: #BBA056;
     text-decoration: underline;
     font-size: 0.8em;

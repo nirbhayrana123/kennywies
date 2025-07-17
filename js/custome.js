@@ -111,36 +111,37 @@ $(document).ready(function () {
   AOS.init();
 
   //////////////////////cont////////////
-  const counters = document.querySelectorAll('.count');
+  // const counters = document.querySelectorAll('.count');
 
-  counters.forEach(counter => {
-    counter.innerText = '0';
+  // counters.forEach(counter => {
+  //   counter.innerText = '0';
 
-    const updateCount = () => {
-      const target = +counter.getAttribute('data-target');
-      const current = +counter.innerText;
-      const increment = target / 200; // smaller = slower
+  //   const updateCount = () => {
+  //     const target = +counter.getAttribute('data-target');
+  //     const current = +counter.innerText;
+  //     const increment = target / 200; // smaller = slower
 
-      if (current < target) {
-        counter.innerText = `${Math.ceil(current + increment)}`;
-        setTimeout(updateCount, 10);
-      } else {
-        counter.innerText = target + (target === 500 ? '+' : '%');
-      }
-    };
+  //     if (current < target) {
+  //       counter.innerText = `${Math.ceil(current + increment)}`;
+  //       setTimeout(updateCount, 10);
+  //     } else {
+  //      counter.innerText = target + (target === 10000 ? '+' : '+');
 
-    // Trigger when scrolled into view (Optional improvement)
-    const observer = new IntersectionObserver(entries => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          updateCount();
-          observer.unobserve(entry.target); // run once
-        }
-      });
-    }, { threshold: 1 });
+  //     }
+  //   };
 
-    observer.observe(counter);
-  });
+  //   // Trigger when scrolled into view (Optional improvement)
+  //   const observer = new IntersectionObserver(entries => {
+  //     entries.forEach(entry => {
+  //       if (entry.isIntersecting) {
+  //         updateCount();
+  //         observer.unobserve(entry.target); // run once
+  //       }
+  //     });
+  //   }, { threshold: 1 });
+
+  //   observer.observe(counter);
+  // });
 
   ////////////cont number
 
@@ -311,6 +312,27 @@ $(document).ready(function () {
 
 
         
-   
-    
+   $(document).ready(function () {
+     const audio = document.getElementById('audibleAudio');
+  const playBtn = document.getElementById('playBtn');
+  const playIcon = document.getElementById('playIcon');
+  const pauseIcon = document.getElementById('pauseIcon');
+
+  playBtn.addEventListener('click', function () {
+    if (audio.paused) {
+      audio.play();
+      playIcon.style.display = 'none';
+      pauseIcon.style.display = 'inline';
+    } else {
+      audio.pause();
+      playIcon.style.display = 'inline';
+      pauseIcon.style.display = 'none';
+    }
+  });
+
+  audio.addEventListener('ended', function () {
+    playIcon.style.display = 'inline';
+    pauseIcon.style.display = 'none';
+  });
  
+});

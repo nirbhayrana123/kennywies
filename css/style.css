@@ -3167,7 +3167,7 @@ img.worst-day-text {
     position: relative;
 }
 
-a.learn-more-link.abslut {
+a.button.abslut {
     font-size: 14px;
 }
 
@@ -4006,7 +4006,7 @@ ul.breadcrumbs {
 }
 
 ul.breadcrumbs a {
-    color: #ffd497;
+    color: #991a34;
     font-weight: 900;
 }
 section.postcard {
@@ -4052,7 +4052,9 @@ section.postcard {
     background-color: #ffffff;
 }
 
-
+.fore-grid-bg .wellness-col.bb-1 p {
+    margin-bottom: 0;
+}
 
 
 /********Video icon*************/
@@ -4737,26 +4739,14 @@ h5.mtfyt {
 
 a.more-link.button {
     margin-top: 10px;
-}
+} 
 
-.learn-more-link {
-    font-weight: 500;
-    text-decoration: none;
-    display: flex;
-    align-items: center;
-    gap: 0.3em;
-    justify-content: center;
-    font-size: 0.875em;
-    transition: color 0.2s;
-    margin-top: 0;
-}
-
-.learn-more-link .arrow {
+.button .arrow {
     transition: transform 0.2s;
     font-size: 1em;
 }
 
-.learn-more-link:hover .arrow {
+.button:hover .arrow {
     transform: translateX(0.15em);
 }
 
@@ -5296,7 +5286,7 @@ ul.features.full li {
 a.button.border-only {
     background: transparent;
     border: 2px solid #991A34;
-    color: #333;
+    color: #991A34;
 }
 
 a.button.border-only:hover {

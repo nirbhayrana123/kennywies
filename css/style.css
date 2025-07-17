@@ -35,7 +35,8 @@ h4 {
     font-weight: 700;
 }
 
-a.active-nav, a.active-nav i {
+a.active-nav,
+a.active-nav i {
     color: #991a34 !important;
 }
 
@@ -93,9 +94,11 @@ a {
     font-family: "Poppins", sans-serif;
     font-weight: 400;
 }
+
 .pricing-set h4 {
     color: #981a34;
 }
+
 .header.bgcolor ul.navmenu a {
     color: #000000;
 }
@@ -104,8 +107,8 @@ header.header.bg .nav a:hover {
     color: #BBA056;
 }
 
-.button.whitebt { 
-    background-color: #ffffff; 
+.button.whitebt {
+    background-color: #ffffff;
     color: #000000;
 }
 
@@ -314,6 +317,7 @@ a.contact-nav {
     color: #ffffff !important;
     font-family: "Poppins", sans-serif;
     border-radius: 1.875em;
+    padding-bottom: 13px;
 }
 
 .dropreletiv {
@@ -458,12 +462,14 @@ img.logos-people6 {
 
 .button:hover {
     color: #ffffff;
-    box-shadow: 360px 0 0 0 #BBA056 inset;
+    box-shadow: 360px 0 0 0 #bba056 inset;
 }
+
 a.button.blockbutton:hover {
     color: #ffffff;
     box-shadow: 455px 0 0 0 #BBA056 inset;
 }
+
 .button {
     font-size: 15px;
     font-weight: 500;
@@ -476,7 +482,7 @@ a.button.blockbutton:hover {
     border-radius: 1.875em;
     transition: 0.6s;
     display: inline-block;
-    box-shadow: 0 0 0 0 #991A34 inset;
+    box-shadow: 0 0 0 0 #bba056 inset;
     background-color: #991A34;
     text-align: center;
     border: none;
@@ -828,6 +834,7 @@ section.podcast-section {
     /* color: #ffffff; */
     max-width: 38%;
 }
+
 .podcast-row h5.tag-line::after {
     background-color: #ffffff;
 }
@@ -1199,7 +1206,8 @@ section.into-section .wellness-col {
 
 .mySwiper .swiper-pagination.swiper-pagination-clickable.swiper-pagination-bullets.swiper-pagination-horizontal {
     bottom: 0px;
-} 
+}
+
 .video-box-row ul li {
     position: relative;
     margin-bottom: 8px;
@@ -1208,10 +1216,12 @@ section.into-section .wellness-col {
     gap: 15px;
     padding-bottom: 10px;
 }
- .video-box-row ul li span.iconlist {
+
+.video-box-row ul li span.iconlist {
     width: 40px;
 }
- .video-box-row ul li p {
+
+.video-box-row ul li p {
     width: 100%;
 }
 
@@ -1242,9 +1252,11 @@ section.aboutus {
 img.award-star {
     max-width: 180px;
 }
+
 .award-badge h4 {
     font-size: 0.9rem;
 }
+
 .aboutus .left,
 .aboutus .right {
     position: relative;
@@ -1280,8 +1292,7 @@ img.award-star {
     line-height: 1.2em;
     background-color: #ffffff;
     backdrop-filter: blur(5px);
-    box-shadow: 0 20px 40px 
- color-mix(in srgb, #ffffff, transparent 85%);
+    box-shadow: 0 20px 40px color-mix(in srgb, #ffffff, transparent 85%);
     border-radius: 10px;
 }
 
@@ -1591,10 +1602,12 @@ h5.info-title {
 .courses-details-section img {
     border-radius: 10px 10px 10px 10px;
 }
+
 .courses-details-contents p {
     margin: 27px 0;
 }
- .courses-details-contents p.bold {
+
+.courses-details-contents p.bold {
     font-weight: 700;
     color: #000000;
     font-size: 1em;
@@ -1710,13 +1723,13 @@ h5.info-title {
     display: block;
 }
 
- 
+
 
 .contact-box {
     text-align: center;
 }
 
- 
+
 
 .post-meta {
     display: flex;
@@ -1808,7 +1821,7 @@ a.buttobooksec {
     font-size: 1.6rem;
 }
 
- 
+
 
 /*********FAQS***********/
 .faq-item {
@@ -1818,8 +1831,7 @@ a.buttobooksec {
 .question {
     font-size: 1.1rem;
     position: relative;
-    display: flex
-;
+    display: flex;
     align-items: center;
     cursor: pointer;
     color: #000000;
@@ -1876,8 +1888,8 @@ a.buttobooksec {
     margin-bottom: 25px;
 }
 
- 
- 
+
+
 
 /*********FAQS END***********/
 a {
@@ -2405,7 +2417,7 @@ a.button.w-7 {
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: 1s all ease; 
+    transition: 1s all ease;
 }
 
 f .step.active .step-number {
@@ -2716,7 +2728,7 @@ section.sesson {
 }
 
 
- 
+
 
 ul.features {
     display: grid;
@@ -2724,7 +2736,7 @@ ul.features {
     gap: 20px 30px;
     /* background-color: #ffeef2; */
     padding: 30px 15px;
-    margin-top: 20px; 
+    margin-top: 20px;
 }
 
 ul.features li {
@@ -2733,10 +2745,11 @@ ul.features li {
     gap: 10px;
     font-size: 0.8em;
 }
+
 .listin-img {
     width: 25px;
 }
- 
+
 section#clendly {
     text-align: center;
     padding: 50px 0;
@@ -2856,8 +2869,8 @@ a.cta-block h4 {
     padding-bottom: 30px;
 }
 
-.podcast-butt h3 { 
-    color: #fff; 
+.podcast-butt h3 {
+    color: #fff;
 }
 
 .flex-podcastbut {
@@ -4004,6 +4017,7 @@ ul.breadcrumbs a {
     color: #991a34;
     font-weight: 900;
 }
+
 section.postcard {
     background-color: rgb(241 241 240);
     padding: 80px 0;
@@ -4240,9 +4254,11 @@ section.postcard {
 .stats .stat-item:last-child {
     border-right: 0;
 }
+
 section.stats.hidens {
     display: none;
 }
+
 /*****************Podcast**********************/
 .flex-whatwe {
     display: flex;
@@ -4673,18 +4689,21 @@ section.sourses-section .right-content h3 {
 .price-row {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    font-size: 0.875em; 
+    font-size: 0.875em;
+    align-items: baseline;
 }
+
 .price-row .price {
     background-color: #BBA056;
     padding: 8px 13px;
     border-radius: 10px;
 }
+
 .price .current-price {
     font-weight: 700;
-    color: #fff; 
+    color: #fff;
 }
+
 .video-boxes .audio-player {
     position: absolute;
     z-index: 9;
@@ -4693,6 +4712,7 @@ section.sourses-section .right-content h3 {
     top: 40%;
     left: 40%;
 }
+
 .video-boxes .audio-player button {
     background-color: #ffffff;
     border-radius: 50%;
@@ -4703,18 +4723,21 @@ section.sourses-section .right-content h3 {
     border: 0;
     position: relative;
 }
+
 .blog-detailsdhidee {
     display: none;
 }
+
 h5.mtfyt {
     margin-top: 12px;
     font-size: 1.5rem;
     margin-bottom: 10px;
 }
+
 .video-boxes .audio-player button::before {
     content: "";
     position: absolute;
-    z-index:-1;
+    z-index: -1;
     left: 50%;
     top: 50%;
     transform: translateX(-50%) translateY(-50%);
@@ -4725,6 +4748,7 @@ h5.mtfyt {
     border-radius: 50%;
     animation: pulse-border 1100ms ease-out infinite;
 }
+
 .price .original-price {
     text-decoration: line-through;
     color: #ededee;
@@ -4734,7 +4758,7 @@ h5.mtfyt {
 
 a.more-link.button {
     margin-top: 10px;
-} 
+}
 
 .button .arrow {
     transition: transform 0.2s;
@@ -4973,7 +4997,7 @@ a.more-link.button {
     height: 40px;
     align-items: center;
     margin-right: 15px;
-    color: #BBA056;
+    color: #991a34;
     border-radius: 30px;
     background-color:
         color-mix(in srgb, #BBA056, transparent 90%);
@@ -5286,6 +5310,14 @@ a.button.border-only {
 
 a.button.border-only:hover {
     color: #fff;
+}
+
+a.button.border-only:hover {
+    box-shadow: 360px 0 0 0 #991a34 inset;
+}
+
+a.button.border-only {
+    box-shadow: 0 0 0 0 #991a34 inset;
 }
 
 .who-we-are .button-row {
@@ -5664,9 +5696,9 @@ section.why-choose-us.bookssection .video-boxes {
         flex-wrap: wrap;
     }
 
-.question {
-    font-size: 1.2em; 
-}
+    .question {
+        font-size: 1.2em;
+    }
 
 
 
@@ -5681,11 +5713,13 @@ section.why-choose-us.bookssection .video-boxes {
     body {
         font-size: 13.3px;
     }
+
     .video-boxes {
         width: 155px;
         border: 6px solid #fff;
         bottom: -86px;
     }
+
     .button {
         font-size: 12px;
     }

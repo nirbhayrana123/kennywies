@@ -670,6 +670,7 @@ a.detail2 {
     font-family: "Poppins", sans-serif;
 }
 
+
 .img-box {
     position: relative;
 }
@@ -2501,7 +2502,9 @@ f .step.active .step-number {
 
 
 
-
+.shine-effect iframe {
+    height: 188px;
+}
 
 .step h4 {
     margin-bottom: 10px;

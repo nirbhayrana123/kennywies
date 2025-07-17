@@ -4005,7 +4005,7 @@ ul.breadcrumbs {
 }
 
 ul.breadcrumbs a {
-    color: #ffd497;
+    color: #991a34;
     font-weight: 900;
 }
 section.postcard {
@@ -5285,7 +5285,7 @@ ul.features.full li {
 a.button.border-only {
     background: transparent;
     border: 2px solid #991A34;
-    color: #333;
+    color: #991A34;
 }
 
 a.button.border-only:hover {

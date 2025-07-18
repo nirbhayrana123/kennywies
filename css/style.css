@@ -42,6 +42,77 @@ a.active-nav i {
 
 
 
+.mentor-section {
+    background-color: #F6F6F6;
+    padding: 40px 20px; 
+}
+
+.mentor-wrapper {
+    margin: 0 auto;
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+}
+
+.mentor-image img {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 5px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+.mentor-content {
+    width: 60%;
+}
+.mentor-content h2 {
+  color: #3b1f5b; 
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+
+.mentor-content h2 span {
+  color: #3b1f5b;
+}
+
+.mentor-content p {
+  color: #333; 
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+.mentor-content a {
+  color: #cc2c61;
+  text-decoration: underline;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .audible-button {
     font-size: 15px;
     font-weight: 500;
@@ -59,6 +130,8 @@ a.active-nav i {
     align-items: center;
     background-color: #fff;
     margin-bottom: 50px;
+    max-width: 194px;
+    justify-content: center;
 
     }
 
@@ -4722,7 +4795,7 @@ section.sourses-section .right-content h3 {
     max-height: 40px;
     position: relative;
 }
-.feature-icon::after {
+.homesder .feature-icon::after {
     content: "book";
     background-color: #bba056;
     width: 53px;
@@ -4760,35 +4833,35 @@ section.sourses-section .right-content h3 {
     margin-top: 20px;
 }
 
-.business-coach {
+/* .business-coach {
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
     padding-top: 110px;
     width: 65%;
     gap: 30px;
-}
+} */
 
-.exprince img {
+/* .exprince img {
     width: 290px;
     border-radius: 10px;
     border: 3px solid #991a34;
-}
+} */
 
-.content-business-coach h4 {
+/* .content-business-coach h4 {
     margin-bottom: 10px;
 }
 
 .content-business-coach h5 {
     font-size: 0.8em;
     line-height: 1.5;
-}
+} */
 
 
 
 /************hero section amt****************/
 .hero-section {
-    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../images/14.jpeg) center / cover no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../images/8.jpeg) center / cover no-repeat;
     color: #fff;
     text-align: center;
     padding: 5em 0em 2em;
@@ -4797,7 +4870,7 @@ section.sourses-section .right-content h3 {
 
 .right-wordsendcycal.abslut {
     position: absolute;
-    width: 200px;
+    width: 270px;
 }
 
 

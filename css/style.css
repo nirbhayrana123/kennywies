@@ -3261,14 +3261,18 @@ img.worst-day-text {
 }
 .formleffieldds {
     background-color: #512570;
-    border-radius: 16px; 
-    padding: 40px 40px 40px 50px; 
+    border-radius: 16px;
+    padding: 40px 40px 40px 50px;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
 }
 
 .freeform-img {
     position: relative;
-    min-height: 360px;
-    height: 360px;
+    min-height: 465px;
+    height: 465px;
     overflow: hidden;
     width: 100%;
 }

@@ -357,3 +357,37 @@ $(document).ready(function () {
   });
  
 });
+
+
+
+
+
+
+
+
+ $(document).ready(function () {
+  $('.audibleBtn').on('click', function () {
+    var audio = $($(this).data('audio'))[0];
+    var icon = $(this).find('.icon');
+
+    // Pause all other audios
+    $('audio').not(audio).each(function () {
+      this.pause();
+      this.currentTime = 0;
+      $('.audibleBtn .icon').attr('src', 'https://m.media-amazon.com/images/G/01/Audible/Homestead/samplePlayer/Play._CB655354636_.svg');
+    });
+
+    if (audio.paused) {
+      audio.play();
+      icon.attr('src', 'https://m.media-amazon.com/images/G/01/Audible/Homestead/samplePlayer/Pause._CB655354636_.svg');
+    } else {
+      audio.pause();
+      icon.attr('src', 'https://m.media-amazon.com/images/G/01/Audible/Homestead/samplePlayer/Play._CB655354636_.svg');
+    }
+
+    // Reset icon when ended
+    $(audio).on('ended', function () {
+      icon.attr('src', 'https://m.media-amazon.com/images/G/01/Audible/Homestead/samplePlayer/Play._CB655354636_.svg');
+    });
+  });
+});

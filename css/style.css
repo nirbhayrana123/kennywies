@@ -40,6 +40,116 @@ a.active-nav i {
     color: #991a34 !important;
 }
 
+
+
+.mentor-section {
+    background-color: #F6F6F6;
+    padding: 40px 20px; 
+}
+
+.mentor-wrapper {
+    margin: 0 auto;
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+}
+
+.mentor-image img {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 5px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+.mentor-content {
+    width: 60%;
+}
+.mentor-content h2 {
+  color: #3b1f5b; 
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+
+.mentor-content h2 span {
+  color: #3b1f5b;
+}
+
+.mentor-content p {
+  color: #333; 
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+.mentor-content a {
+  color: #cc2c61;
+  text-decoration: underline;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.audible-button {
+    font-size: 15px;
+    font-weight: 500;
+    color: #991a34;
+    padding: 11px 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+    border-radius: 1.875em;
+    transition: 0.6s;
+    box-shadow: 0 0 0 0 #bba056 inset;
+    text-align: center;
+    border: 1px solid #991a34;
+    font-family: "Poppins", sans-serif;
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    margin-bottom: 50px;
+    max-width: 194px;
+    justify-content: center;
+
+    }
+
+    .audible-button img {
+      width: 20px;
+      height: 20px;
+      margin-right: 8px;
+    }
+
+    .audible-button:hover {
+      background-color: #f5f5f5;
+    }
+
+
+
+
+
+
 header.header.blacktext a.logo-brand img {
     filter: brightness(0) saturate(100%);
 }
@@ -466,7 +576,7 @@ img.logos-people6 {
 
 .trauma h4 {
     margin-bottom: 20px;
-    font-size: 1.2em;
+    font-size: 1.6em;
     color: #32220b;
 }
 
@@ -509,8 +619,7 @@ a.button.blockbutton:hover {
 }
 
 .button-row {
-    display: flex;
-    flex-wrap: wrap;
+    display: flex; 
     gap: 15px;
 }
 
@@ -1107,8 +1216,7 @@ section.into-section .wellness-col {
 }
 
 .wellness-col p {
-    color: #000;
-    font-size: 0.7em;
+    color: #000; 
     margin-bottom: 15px;
 }
 
@@ -1155,16 +1263,20 @@ section.into-section .wellness-col {
 .progress-content h3 {
     color: #ffffff;
     margin: 0;
-    font-family: "Poppins", sans-serif;
-    margin-top: 10px;
+    font-family: "Poppins", sans-serif; 
     font-size: 0.8rem;
     font-weight: 500;
 }
-
+.progress-content h3 span.numbersd {
+    display: block;
+    font-size: 3rem;
+    margin-bottom: 28px;
+}
 .progress-content h5 {
-    font-size: 1em;
+    font-size: 1.2em;
     color: #ffffff;
     font-weight: 600;
+    margin-top: 15px;
 }
 
 /********************slider************************/
@@ -2456,7 +2568,7 @@ f .step.active .step-number {
 
 .step h4 {
     margin-bottom: 10px;
-    font-size: 1em;
+    font-size: 1.3em;
     font-weight: 700;
 }
 
@@ -2493,7 +2605,7 @@ section.self-development::after {
 
 .self-development-content {
     text-align: center;
-    width: 50%;
+    width: 75%;
     margin: 0 auto;
     padding: 100px 0px;
     position: relative;
@@ -2503,6 +2615,7 @@ section.self-development::after {
 .self-development-content h3 {
     color: #ffffff;
     margin: 35px 0;
+    font-size: 2.3rem;
 }
 
 
@@ -4459,7 +4572,6 @@ section.postcard {
 .flexchuse {
     display: flex;
     align-items: start;
-    flex-wrap: wrap;
 }
 
 .why-imgds,
@@ -4678,7 +4790,12 @@ section.sourses-section .right-content h3 {
     flex-shrink: 0;
     position: relative;
 }
-
+.right-content .button-row {
+    padding-left: 65px;
+}
+.right-content button.audibleBtn {
+    margin-left: 65px;
+}
 .feature-icon {
     background-color: #BBA05673;
     display: flex;
@@ -4692,8 +4809,22 @@ section.sourses-section .right-content h3 {
     min-height: 40px;
     max-width: 40px;
     max-height: 40px;
+    position: relative;
 }
-
+.homesder .feature-icon::after {
+    content: "book";
+    background-color: #bba056;
+    width: 53px;
+    height: 26px;
+    position: absolute;
+    color: #fff;
+    top: -13px;
+    transform: rotate(-46deg);
+    left: -27px;
+    border-radius: 20px;
+    padding: 1px;
+    font-size: 0.8em;
+}
 .feature-text h4 {
     font-weight: 600;
     margin-bottom: 4px;
@@ -4718,35 +4849,35 @@ section.sourses-section .right-content h3 {
     margin-top: 20px;
 }
 
-.business-coach {
+/* .business-coach {
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
     padding-top: 110px;
     width: 65%;
     gap: 30px;
-}
+} */
 
-.exprince img {
+/* .exprince img {
     width: 290px;
     border-radius: 10px;
     border: 3px solid #991a34;
-}
+} */
 
-.content-business-coach h4 {
+/* .content-business-coach h4 {
     margin-bottom: 10px;
 }
 
 .content-business-coach h5 {
     font-size: 0.8em;
     line-height: 1.5;
-}
+} */
 
 
 
 /************hero section amt****************/
 .hero-section {
-    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../images/14.jpeg) center / cover no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../images/8.jpeg) center / cover no-repeat;
     color: #fff;
     text-align: center;
     padding: 5em 0em 2em;
@@ -4755,7 +4886,7 @@ section.sourses-section .right-content h3 {
 
 .right-wordsendcycal.abslut {
     position: absolute;
-    width: 200px;
+    width: 270px;
 }
 
 

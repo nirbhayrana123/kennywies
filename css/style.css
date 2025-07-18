@@ -3085,7 +3085,7 @@ section.mb-4 {
     background-color: #5e7130;
 }
 
-.card-row.green .card-content-grey-bg h3,
+.card-row.green .card-content-grey-bg h3,.card-content-grey-bg h4,
 .card-row.green .card-content-grey-bg p {
     color: #fff;
 }

@@ -1620,7 +1620,7 @@ h5.info-title {
 
 .box3 {
     background-color: #f8f1ed;
-    padding: 31px; 
+    padding: 31px;
     display: flex;
     flex-direction: column;
     gap: 7px;
@@ -1802,7 +1802,8 @@ a.buttobooksec {
     align-items: flex-start;
     gap: 40px;
     margin: 45px 0px;
-} 
+}
+
 .feature {
     margin-bottom: 20px;
 }
@@ -2491,13 +2492,14 @@ section.self-development::after {
     margin: 35px 0;
 }
 
- 
+
 
 .self-development-content p {
     color: #fff;
     line-height: 1.5em;
     margin-bottom: 40px;
 }
+
 .card-image-grey-bg iframe {
     height: 100%;
 }
@@ -2777,7 +2779,7 @@ ul.features {
 ul.features li {
     display: flex;
     align-items: center;
-    gap: 10px; 
+    gap: 10px;
 }
 
 .listin-img {
@@ -3085,7 +3087,8 @@ section.mb-4 {
     background-color: #5e7130;
 }
 
-.card-row.green .card-content-grey-bg h3,.card-content-grey-bg h4,
+.card-row.green .card-content-grey-bg h3,
+.card-content-grey-bg h4,
 .card-row.green .card-content-grey-bg p {
     color: #fff;
 }
@@ -3129,15 +3132,18 @@ section.mb-4 {
     align-items: start;
     gap: 40px;
 }
+
 .flexbooklist {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
 }
+
 .booklistcontent h5 {
     font-size: 1.3rem;
     color: #000;
 }
+
 .booklisting {
     border: 1px solid #991a34;
     border-radius: 15px;
@@ -3146,19 +3152,24 @@ section.mb-4 {
 .videotestiomonials p a {
     color: #BBA056;
 }
+
 .videotestiomonials {
     text-align: center;
 }
+
 .booklistcontent {
     padding: 10px;
 }
+
 section.podcastvideos {
     padding: 100px 0px;
 }
+
 .booklistcontent h6 {
     font-size: 1rem;
     margin: 10px 0px;
 }
+
 .flexbuttoons {
     display: flex;
     align-items: center;
@@ -3166,16 +3177,20 @@ section.podcastvideos {
     margin-top: 13px;
     padding: 10px;
 }
+
 .flexbuttoons a.button {
-    margin: 0; 
+    margin: 0;
 }
+
 section.recommended-readinglist {
     padding: 100px 0px;
 }
+
 .booklisting-img img {
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
 }
+
 .rigth-realpandemic {
     max-width: 100%;
     flex: 1;
@@ -3250,11 +3265,12 @@ img.worst-day-text {
     grid-auto-columns: 1fr;
     justify-content: space-between;
     place-items: center;
-    width: 100%; 
+    width: 100%;
     margin-top: 50px;
     margin-bottom: 50px;
     display: grid;
 }
+
 .formleffieldds {
     background-color: #512570;
     border-radius: 16px;
@@ -3264,9 +3280,11 @@ img.worst-day-text {
     justify-content: center;
     display: flex;
 }
+
 section.allformfree {
     padding-bottom: 60px;
 }
+
 .freeform-img {
     position: relative;
     min-height: 465px;
@@ -3274,6 +3292,7 @@ section.allformfree {
     overflow: hidden;
     width: 100%;
 }
+
 .freeform-img img {
     position: absolute;
     width: 100%;
@@ -3286,16 +3305,20 @@ section.allformfree {
     object-fit: cover;
     object-position: center;
 }
+
 .group-form-field {
     width: 100%;
 }
+
 .submitebut {
     text-align: center;
 }
+
 .contentformdse {
     text-align: center;
     margin-bottom: 10px;
 }
+
 .contentformdse h5 {
     font-size: 1.5rem;
     color: #fff;
@@ -3305,11 +3328,13 @@ section.allformfree {
 .contentformdse p {
     color: #fff;
 }
+
 .group-form-field label {
     display: block;
     font-size: 0.8rem;
     color: #fff;
 }
+
 .group-form-field input.customefields {
     font-size: 1rem;
     padding: 10px;
@@ -3324,6 +3349,7 @@ section.allformfree {
     width: 100%;
     gap: 15px;
 }
+
 .leftresourcsertymain img {
     border-radius: 20px;
     position: absolute;
@@ -3335,12 +3361,15 @@ section.allformfree {
     object-fit: cover;
     object-position: top;
 }
+
 .righttresourcsertymain h2 {
     font-size: 3em;
 }
+
 section.resourcesmain-section {
     padding: 60px 0px;
 }
+
 .righttresourcsertymain p a {
     color: #BBA056;
 }
@@ -4621,7 +4650,7 @@ section.sourses-section .right-content h3 {
     display: flex;
     margin-bottom: 20px;
     gap: 10px;
-    align-items: center;
+    align-items: flex-start;
 }
 
 .feature-icon span {
@@ -4672,23 +4701,27 @@ section.sourses-section .right-content h3 {
 .discover-btn:hover {
     background-color: #e15336;
 }
+
 .sandstone-logo-blk {
     margin-top: 20px;
 }
+
 .business-coach {
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
     padding-top: 110px;
     width: 65%;
-    gap: 30px; 
+    gap: 30px;
 }
+
 .exprince img {
     width: 290px;
     border-radius: 10px;
     border: 3px solid #991a34;
 }
- .content-business-coach h4 {
+
+.content-business-coach h4 {
     margin-bottom: 10px;
 }
 
@@ -4865,7 +4898,7 @@ section.sourses-section .right-content h3 {
     align-items: baseline;
 }
 
-.price-row .price { 
+.price-row .price {
     padding: 8px 13px;
     border-radius: 10px;
 }
@@ -5041,15 +5074,14 @@ a.more-link.button {
     font-size: 0.8em;
     color: #000000;
     width: 22px;
-    display: flex
-;
+    display: flex;
     margin-right: 5px;
     align-items: center;
     justify-content: center;
     height: 22px;
     border-radius: 20px;
-    background-color: 
- color-mix(in srgb, #991a34, #991a342e 90%);
+    background-color:
+        color-mix(in srgb, #991a34, #991a342e 90%);
 }
 
 
@@ -5470,7 +5502,7 @@ ul.features.full {
     grid-template-columns: repeat(2, 1fr);
     background-color: transparent;
 }
- 
+
 a.button.border-only {
     background: transparent;
     border: 2px solid #991A34;

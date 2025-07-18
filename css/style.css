@@ -456,7 +456,7 @@ img.logos-people6 {
 
 .trauma h4 {
     margin-bottom: 20px;
-    font-size: 1em;
+    font-size: 1.2em;
     color: #32220b;
 }
 
@@ -1620,8 +1620,7 @@ h5.info-title {
 
 .box3 {
     background-color: #f8f1ed;
-    padding: 31px;
-    height: 300px;
+    padding: 31px; 
     display: flex;
     flex-direction: column;
     gap: 7px;
@@ -3261,7 +3260,9 @@ img.worst-day-text {
     border-radius: 16px; 
     padding: 40px 40px 40px 50px; 
 }
-
+section.allformfree {
+    padding-bottom: 60px;
+}
 .freeform-img {
     position: relative;
     min-height: 360px;
@@ -4860,15 +4861,14 @@ section.sourses-section .right-content h3 {
     align-items: baseline;
 }
 
-.price-row .price {
-    background-color: #BBA056;
+.price-row .price { 
     padding: 8px 13px;
     border-radius: 10px;
 }
 
 .price .current-price {
     font-weight: 700;
-    color: #fff;
+    color: #991a34;
 }
 
 .video-boxes .audio-player {
@@ -4883,7 +4883,7 @@ section.sourses-section .right-content h3 {
 .video-boxes .audio-player button {
     background-color: #ffffff;
     border-radius: 50%;
-    padding: 6px;
+    padding: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -4918,7 +4918,7 @@ h5.mtfyt {
 
 .price .original-price {
     text-decoration: line-through;
-    color: #ededee;
+    color: #991a34;
     margin-left: 0.5em;
 }
 
@@ -5035,20 +5035,22 @@ a.more-link.button {
 .featurerd .icon {
     padding: 14px;
     font-size: 0.8em;
-    color: #BBA056;
+    color: #000000;
     width: 22px;
-    display: flex;
+    display: flex
+;
     margin-right: 5px;
     align-items: center;
     justify-content: center;
     height: 22px;
     border-radius: 20px;
-    background-color:
-        color-mix(in srgb, #BBA056, transparent 90%);
+    background-color: 
+ color-mix(in srgb, #991a34, #991a342e 90%);
 }
 
+
 .divider {
-    color: #BBA056;
+    color: #e4c3ca;
 }
 
 .images {

@@ -5,7 +5,27 @@ $(document).ready(function () {
     $('#nav-menu').toggleClass('openmenu');
   });
 
-
+  new Swiper(".testimoalkenny", {
+    initialSlide: 0,
+    spaceBetween: 0,
+    loop: true,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    breakpoints: {
+      768: {
+        slidesPerView: 1
+      },
+      480: {
+        slidesPerView: 1
+      }
+    }
+  });
 
   new Swiper(".videoslider", {
     initialSlide: 0,
@@ -43,14 +63,15 @@ $(document).ready(function () {
       prevEl: ".swiper-button-prev",
     },
     breakpoints: {
-      991: {
+      1100: {
         slidesPerView: 3
       },
       767: {
         slidesPerView: 2
       },
       480: {
-        slidesPerView: 1
+        slidesPerView: 1,
+           spaceBetween: 0,
       }
     }
   });

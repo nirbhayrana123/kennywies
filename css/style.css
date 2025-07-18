@@ -151,7 +151,7 @@ a.logo-brand {
     /* max-width: 1270px; */
     width: 100%;
     margin: 0 auto;
-    padding: 0 15px;
+    padding: 0 20px;
     box-sizing: border-box;
 }
 
@@ -164,28 +164,26 @@ header.header.blacktext ul.navmenu li a {
 @media (max-width: 1300px) {
     .container {
         max-width: 1170px;
-        padding: 20px;
+        padding: 0px 20px ;
     }
 }
 
 @media (max-width: 1024px) {
     .container {
         max-width: 900px;
-        padding: 20px;
+        padding:0px 20px;
     }
 }
 
 @media (max-width: 768px) {
     .container {
         max-width: 700px;
-        padding: 15px;
     }
 }
 
 @media (max-width: 480px) {
     .container {
         max-width: 100%;
-        padding: 10px;
     }
 }
 
@@ -1163,18 +1161,16 @@ section.into-section .wellness-col {
     padding: 25px 0;
 }
 
-.swiper-slide {
-    /* text-align: center; transition: 0.5s; */
+/* .swiper-slide {
+      text-align: center; transition: 0.5s; 
     margin-right: 23px !important;
-}
+} */
 
-/* .swiper-slide img { height: 100%; object-fit: cover; position: absolute; inset: 0; scale: 1; transition: 0.5s; } */
-/* .swiper-slide:hover img { scale: 1.2; } */
+
 .swiper-slide:hover .outline {
     border: 1px solid #BBA056;
 }
-
-/* .object-fit { width: 85%; height: 100%; min-height: 300px; max-height: 300px; overflow: hidden; position: relative; margin: 0 auto; } */
+ 
 .outline {
     position: absolute;
     width: 100%;
@@ -2219,7 +2215,6 @@ section.abouts {
 
 .testimonia-row {
     display: flex;
-    align-items: center;
     justify-content: space-between;
 }
 
@@ -2231,6 +2226,8 @@ section.abouts {
     display: flex;
     gap: 15px;
     margin-top: 30px;
+    position: relative;
+    width: 140px;
 }
 
 .testimonial-navigation button {
@@ -2245,7 +2242,7 @@ section.abouts {
 }
 
 .testimonial-card {
-    width: 60%;
+    width: 100%;
     display: flex;
     align-items: flex-start;
     gap: 30px;
@@ -2254,11 +2251,11 @@ section.abouts {
 
 img.testimonialimg {
     position: absolute;
-    right: 0;
+    right: 60px;
     max-width: 70px;
 }
 
-.testimonial-card img {
+.testimonial-card img.userpertion {
     width: 300px;
 }
 
@@ -4454,8 +4451,7 @@ section.postcard {
     width: 50%;
 }
 
-.why-imgds img {
-    height: 462px;
+.why-imgds img { 
     object-fit: cover;
     object-position: center center;
     border-radius: 30px 30px 30px 30px;
@@ -5495,6 +5491,7 @@ section.kanny-content {
 
 .button-flex a {
     margin-right: 15px;
+    margin-top: 0;
 }
 
 ul.features.full {
@@ -5541,9 +5538,7 @@ a.button.border-only {
     margin-top: 70px;
 }
 
-section.why-choose-us.bookssection .video-boxes {
-    right: -80px;
-}
+
 
 .wordsendsicyel .form {
     padding: 25px 40px;
@@ -5558,13 +5553,43 @@ section.why-choose-us.bookssection .video-boxes {
 .wordsendsicyel button.button {
     margin-top: 0;
 }
-
+.price-row a.button {
+    margin-top: 0;
+}
+.post-meta .buttonsser {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.post-meta  .buttonsser a {
+    color: #BBA056;
+    text-decoration: underline;
+    font-size: 0.8em;
+    font-weight: 500;
+}
 /*********************Mobile styles ************************/
-@media (max-width: 1200px) {
+@media (max-width: 1300px) {
+ul.navmenu { 
+    gap: 20px; 
+}
+ul.navmenu li a {
+    font-size: 0.7em;
+}
+.sesson-image2 { 
+    left: auto; 
+}
 
+}
+@media (max-width: 1200px) {
+.book-banner { 
+    grid-template-columns: 1fr; 
+}
     .flexwordsendcycal {
         grid-template-columns: 100%;
     }
+.flexbooklist { 
+    grid-template-columns: repeat(2, 1fr); 
+}
 
     .left-wordsendcycal {
         order: 2;
@@ -5583,15 +5608,23 @@ section.why-choose-us.bookssection .video-boxes {
     }
 
     .sesson-image2 {
-        top: 23%;
-        height: 550px;
+        top: 0;
+        height: auto;
+        position: relative;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        width: 100%;
     }
 
     .sesson-images {
-        height: 410px;
-        margin-bottom: 280px;
+        height: auto;
+        margin-bottom: 80px;
     }
-
+.card-row { 
+    grid-template-columns: 1fr;
+    grid-auto-columns: 1fr; 
+}
     ul.navmenu {
         position: fixed;
         width: 100%;
@@ -5691,6 +5724,9 @@ section.why-choose-us.bookssection .video-boxes {
         width: 45%;
     }
 
+  .card-image-grey-bg {
+        min-height: 500px;
+    }
 
 }
 
@@ -5701,41 +5737,31 @@ section.why-choose-us.bookssection .video-boxes {
     }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 @media (max-width: 1024px) {
     body {
         font-size: 14px;
     }
-
+.bookssection .left-images {
+    height: auto;
+}
     .card-row,
     .card-row.green {
         grid-template-columns: 1fr;
         grid-row-gap: 10px;
     }
 
-    .card-image-grey-bg {
-        min-height: 500px;
-    }
-
+  .left-images { 
+    padding-right: 0px;
+}
     .flex-blog {
         grid-template-columns: 100%;
     }
-
+.about-row { 
+    flex-wrap: wrap;
+}
+.about-row .left {
+    flex: 100%;
+}
     .book-img,
     .book-cintent {
         width: 100%;
@@ -5780,7 +5806,7 @@ section.why-choose-us.bookssection .video-boxes {
     }
 
     .testimonial-content {
-        max-width: none;
+        max-width: 100%;
     }
 
     .flex-inwrapper .content {
@@ -5833,9 +5859,11 @@ section.why-choose-us.bookssection .video-boxes {
     }
 
     .why-content {
-        padding: 30px 0 0 0;
+        padding: 80px 0 0 0;
     }
-
+section.podcastvideos {
+    padding: 60px 0px;
+}
     .flex-online-coures {
         grid-template-columns: 100%;
     }
@@ -5858,8 +5886,18 @@ section.why-choose-us.bookssection .video-boxes {
         display: none;
     }
 
+.progress-content {
+    flex-wrap: wrap;
+    gap: 48px 40px;
+}
 
-
+.left-area {
+    width: 100%;
+}
+.right-area {
+    width: 100%;
+    margin-top: 40px;
+}
     .panel {
         grid-template-columns: 1fr;
     }
@@ -5869,15 +5907,7 @@ section.why-choose-us.bookssection .video-boxes {
         height: 250px;
         border: 12px solid #fff;
     }
-
-    .sesson-image2 {
-        top: 23%;
-        height: 550px;
-        width: 80%;
-        left: auto;
-        right: 0;
-    }
-
+ 
     button.menu-toggle i {
         font-size: 2em;
     }
@@ -5906,6 +5936,36 @@ section.why-choose-us.bookssection .video-boxes {
 
 }
 
+
+
+
+@media (max-width: 950px) {
+.testimonia-row { 
+    flex-wrap: wrap;
+    gap: 45px 6px;
+}
+.testimonial-text {
+    width: 100%;
+}
+.testimonial-navigation {
+    margin-left: auto;
+}
+
+.business-coach {
+    padding-top: 100px;
+    width: 100%;
+}
+.flexbooklist { 
+    grid-template-columns: repeat(1, 1fr); 
+}
+
+
+
+
+
+}
+ 
+
 @media (max-width: 767px) {
     .bookssection .left-images {
         height: auto;
@@ -5918,7 +5978,7 @@ section.why-choose-us.bookssection .video-boxes {
     .video-boxes {
         width: 155px;
         border: 6px solid #fff;
-        bottom: -86px;
+        bottom: -40px;
     }
 
     .button {
@@ -6039,6 +6099,7 @@ section.why-choose-us.bookssection .video-boxes {
     .podcast-right {
         width: 100%;
         margin-top: 40px;
+        max-width: 100%;
     }
 
     .button-row {
@@ -6150,10 +6211,15 @@ section.why-choose-us.bookssection .video-boxes {
         max-width: 100%;
     }
 
-    .testimonial-card img {
-        width: auto;
+    .testimonial-card img.userpertion {
+        width: 100%;
     }
-
+.blog-section {
+    padding: 60px 0px; 
+}
+.progress-content { 
+        justify-content: center;
+    }
     .testimonial-card {
         width: 100%;
         flex-wrap: wrap;
@@ -6223,12 +6289,18 @@ section.why-choose-us.bookssection .video-boxes {
         width: 80%;
     }
 
-    section.why-choose-us.bookssection .video-boxes {
-        right: 0px;
-        height: 400px;
-        width: 86%;
-        top: 106px;
-    }
+    .video-boxes .audio-player { 
+    top: 28%;
+    left: 35%;
+}
+.formcontainer input[type="text"], .formcontainer input[type="email"] {
+  
+    width: auto; 
+}
+
+.formcontainer { 
+    flex-wrap: wrap;
+}
 
 
 
@@ -6237,8 +6309,30 @@ section.why-choose-us.bookssection .video-boxes {
 
 
 
+}
 
+@media (max-width: 500px) {
+.formcontainer input[type="text"], .formcontainer input[type="email"] {
+    width: 100%; 
+}
 
+ul.features.full { 
+    grid-template-columns: repeat(1, 1fr); 
+}
+.button-flex {
+    display: flex;
+    align-items: center;
+}
+ul.features { 
+    grid-template-columns: repeat(1, 1fr);
+  
+}
+ul.post-meta {
+    flex-wrap: wrap;
+}
+.sidebar-widget-two .widget-content { 
+    padding: 20px 20px; 
+}
 
 
 }

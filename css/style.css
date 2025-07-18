@@ -791,7 +791,7 @@ a.detail2 {
     max-height: 450px;
     position: absolute;
     background: #dabba2;
-    inset: -9% 0% 0% 9%;
+    inset: -9% 0% 0% 3%;
 }
 
 /************audio-player *****************/
@@ -1227,7 +1227,8 @@ section.into-section .wellness-col {
 }
 
 .progress-content {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
     justify-content: space-between;
     align-items: center;
     text-align: center;
@@ -3262,7 +3263,7 @@ section.mb-4 {
 }
 
 section.podcastvideos {
-    padding: 100px 0px;
+    padding: 60px 0px;
 }
 
 .booklistcontent h6 {
@@ -5712,7 +5713,10 @@ a.button.border-only {
     .book-banner {
         grid-template-columns: 1fr;
     }
-
+.progress-content { 
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 60px 0px; 
+}
     .flexwordsendcycal {
         grid-template-columns: 100%;
     }
@@ -5873,7 +5877,9 @@ a.button.border-only {
     body {
         font-size: 14px;
     }
-
+section.recommended-readinglist {
+    padding: 50px 0px;
+}
     .bookssection .left-images {
         height: auto;
     }
@@ -6026,10 +6032,7 @@ a.button.border-only {
         display: none;
     }
 
-    .progress-content {
-        flex-wrap: wrap;
-        gap: 48px 40px;
-    }
+   
 
     .left-area {
         width: 100%;
@@ -6115,7 +6118,12 @@ a.button.border-only {
     .bookssection .left-images {
         height: auto;
     }
-
+    .image-c { 
+    height: 100%; 
+}
+.self-development-content h3 { 
+    font-size: 1.3rem;
+}
     body {
         font-size: 13.3px;
     }
@@ -6249,6 +6257,7 @@ a.button.border-only {
 
     .button-row {
         margin-top: 20px;
+        flex-wrap: wrap;
     }
 
     .blog-img {
@@ -6364,9 +6373,7 @@ a.button.border-only {
         padding: 60px 0px;
     }
 
-    .progress-content {
-        justify-content: center;
-    }
+   
 
     .testimonial-card {
         width: 100%;
@@ -6462,7 +6469,23 @@ a.button.border-only {
 }
 
 @media (max-width: 500px) {
+.flexbuttoons { 
+    gap: 20px 0px;
+    flex-wrap: wrap;
+}
+section.book-section.podcast-banner { 
+    padding-bottom: 0px;
+}
+.fucherserlist { 
+        grid-template-columns: 1fr; 
+    }
+.flexbuttoons a.button { 
+    width: 100%;
+} 
 
+    .progress-content {
+        grid-template-columns: repeat(1, 1fr); 
+    }
     .formcontainer input[type="text"],
     .formcontainer input[type="email"] {
         width: 100%;
@@ -6490,5 +6513,11 @@ a.button.border-only {
         padding: 20px 20px;
     }
 
-
+.book-col1 { 
+    min-height: 322px;
+}
+.book-col2 h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
 }

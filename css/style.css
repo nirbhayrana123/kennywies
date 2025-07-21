@@ -410,7 +410,7 @@ button.menu-toggle {
 a.contact-nav {
     background-color: #991A34;
     font-weight: 500;
-    padding: 10px 15px;
+    padding: 10px 20px;
     text-decoration: none;
     transition: 0.6s;
     font-size: 15px;
@@ -916,6 +916,8 @@ section.podcast-section {
     right: 0;
     z-index: 0;
 }
+
+
 
 .podcast-row {
     display: flex;
@@ -2093,7 +2095,6 @@ a:hover {
 .form textarea {
     width: 100%;
     padding: 18px;
-    margin-bottom: 25px;
     border: 1px solid #cccccc73;
     border-radius: 5px;
     outline: none;
@@ -2102,6 +2103,10 @@ a:hover {
 .form .row {
     display: flex;
     gap: 10px;
+}
+
+.row.my-2 {
+    margin: 20px 0;
 }
 
 .form .row input {
@@ -2175,8 +2180,7 @@ iframe {
     border-radius: 8px;
     padding: 24px;
     position: relative;
-    display: flex
-;
+    display: flex;
     align-items: center;
     z-index: 1;
     background-color: #f6f6f6;
@@ -2326,18 +2330,16 @@ section.abouts {
 }
 
 .testimonia-row {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 30% 1fr;
+    gap: 50px;
 }
 
-.testimonial-text {
-    width: 40%;
-}
 
 .testimonial-navigation {
     display: flex;
     gap: 15px;
-    margin-top: 30px;
+    margin-top: 60px;
     position: relative;
     width: 140px;
 }
@@ -2385,6 +2387,10 @@ img.testimonialimg {
     color: #434343;
     margin-bottom: 15px;
     line-height: 1.7em;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
 }
 
 .testimonial-author {
@@ -2624,7 +2630,7 @@ a.start-bt {
 }
 
 .blog-section {
-    padding: 100px 0px;
+    padding: 60px 0px;
     background: #f9f6f1;
 }
 
@@ -3194,7 +3200,7 @@ section.mb-4 {
 }
 
 .card-row.green .card-content-grey-bg {
-    background-color: #5e7130;
+    background-color: #991a34;
 }
 
 .card-row.green .card-content-grey-bg h3,
@@ -3370,31 +3376,28 @@ img.worst-day-text {
 
 }
 
-.lfrtyremains {
-    grid-column-gap: 29px;
-    grid-row-gap: 29px;
-    grid-template-rows: auto;
+.card-columns {
     grid-template-columns: 1fr 1fr;
-    grid-auto-columns: 1fr;
-    justify-content: space-between;
-    place-items: center;
     width: 100%;
-    margin-top: 50px;
-    margin-bottom: 50px;
     display: grid;
+    background-color: #512570;
 }
 
 .formleffieldds {
-    background-color: #512570;
-    border-radius: 16px;
     padding: 40px 40px 40px 50px;
     height: 100%;
     align-items: center;
     justify-content: center;
     display: flex;
 }
-
- 
+section.free-download {
+    padding: 60px 0;
+}
+.free-download-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+}
 
 .freeform-img {
     position: relative;
@@ -3412,7 +3415,6 @@ img.worst-day-text {
     left: 0;
     right: 0;
     bottom: 0;
-    border-radius: 15px;
     object-fit: cover;
     object-position: center;
 }
@@ -3980,6 +3982,10 @@ span.bolder {
 
 main.pt-1.pt-4 {
     padding-top: 145px;
+}
+
+main.pt-1.p1-2 {
+    padding-top: 120px;
 }
 
 .news-block-two .inner-box .post-meta li {
@@ -5257,7 +5263,7 @@ a.more-link.button {
 .flex-aboutarea {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 40px;
+    margin-bottom: 60px;
     flex-wrap: wrap;
 }
 
@@ -5351,9 +5357,11 @@ a.more-link.button {
 }
 
 section.rbt-about-area {
-    padding: 60px 0px;
+    padding-top: 60px;
 }
-
+section.podcastvideos .swiper { 
+    padding: 0;
+}
 .flex-online-coures {
     display: grid;
     grid-template-columns: 25% 16% 1fr;
@@ -5718,10 +5726,12 @@ a.button.border-only {
     .book-banner {
         grid-template-columns: 1fr;
     }
-.progress-content { 
-    grid-template-columns: repeat(2, 1fr); 
-    gap: 60px 0px; 
-}
+
+    .progress-content {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 60px 0px;
+    }
+
     .flexwordsendcycal {
         grid-template-columns: 100%;
     }
@@ -5882,9 +5892,11 @@ a.button.border-only {
     body {
         font-size: 14px;
     }
-section.recommended-readinglist {
-    padding: 50px 0px;
-}
+
+    section.recommended-readinglist {
+        padding: 50px 0px;
+    }
+
     .bookssection .left-images {
         height: auto;
     }
@@ -6012,7 +6024,7 @@ section.recommended-readinglist {
     }
 
     section.podcastvideos {
-        padding: 60px 0px;
+        padding: 50px 0px;
     }
 
     .flex-online-coures {
@@ -6037,7 +6049,7 @@ section.recommended-readinglist {
         display: none;
     }
 
-   
+
 
     .left-area {
         width: 100%;
@@ -6090,14 +6102,7 @@ section.recommended-readinglist {
 
 
 @media (max-width: 950px) {
-    .testimonia-row {
-        flex-wrap: wrap;
-        gap: 45px 6px;
-    }
 
-    .testimonial-text {
-        width: 100%;
-    }
 
     .testimonial-navigation {
         margin-left: auto;
@@ -6112,7 +6117,9 @@ section.recommended-readinglist {
         grid-template-columns: repeat(1, 1fr);
     }
 
-
+.testimonia-row { 
+    grid-template-columns: 100%; 
+}
 
 
 
@@ -6123,12 +6130,29 @@ section.recommended-readinglist {
     .bookssection .left-images {
         height: auto;
     }
-    .image-c { 
-    height: 100%; 
+img.testimonialimg { 
+    bottom: 0;
 }
-.self-development-content h3 { 
-    font-size: 1.3rem;
+.progress-content h3 span.numbersd { 
+    font-size: 2rem; 
 }
+
+.card-columns,.flexfield {
+    grid-template-columns: 1fr; 
+}
+.formleffieldds {
+    order: 2;
+}
+
+
+    .image-c {
+        height: 100%;
+    }
+
+    .self-development-content h3 {
+        font-size: 1.3rem;
+    }
+
     body {
         font-size: 13.3px;
     }
@@ -6155,7 +6179,6 @@ section.recommended-readinglist {
     .about-row,
     .video-box-row,
     .wellness-header,
-    .testimonia-row,
     .meta,
     .podcast-row {
         display: block;
@@ -6170,7 +6193,6 @@ section.recommended-readinglist {
         margin-bottom: 40px;
     }
 
-    .testimonial-text,
     .book-img,
     .book-cintent,
     .podcast-left,
@@ -6378,7 +6400,7 @@ section.recommended-readinglist {
         padding: 60px 0px;
     }
 
-   
+
 
     .testimonial-card {
         width: 100%;
@@ -6474,23 +6496,27 @@ section.recommended-readinglist {
 }
 
 @media (max-width: 500px) {
-.flexbuttoons { 
-    gap: 20px 0px;
-    flex-wrap: wrap;
-}
-section.book-section.podcast-banner { 
-    padding-bottom: 0px;
-}
-.fucherserlist { 
-        grid-template-columns: 1fr; 
+    .flexbuttoons {
+        gap: 20px 0px;
+        flex-wrap: wrap;
     }
-.flexbuttoons a.button { 
-    width: 100%;
-} 
+
+    section.book-section.podcast-banner {
+        padding-bottom: 0px;
+    }
+
+    .fucherserlist {
+        grid-template-columns: 1fr;
+    }
+
+    .flexbuttoons a.button {
+        width: 100%;
+    }
 
     .progress-content {
-        grid-template-columns: repeat(1, 1fr); 
+        grid-template-columns: repeat(1, 1fr);
     }
+
     .formcontainer input[type="text"],
     .formcontainer input[type="email"] {
         width: 100%;
@@ -6518,11 +6544,12 @@ section.book-section.podcast-banner {
         padding: 20px 20px;
     }
 
-.book-col1 { 
-    min-height: 322px;
-}
-.book-col2 h2 {
-    font-size: 2em;
-    margin-bottom: 10px;
-}
+    .book-col1 {
+        min-height: 322px;
+    }
+
+    .book-col2 h2 {
+        font-size: 2em;
+        margin-bottom: 10px;
+    }
 }

@@ -2175,8 +2175,7 @@ iframe {
     border-radius: 8px;
     padding: 24px;
     position: relative;
-    display: flex
-;
+    display: flex;
     align-items: center;
     z-index: 1;
     background-color: #f6f6f6;
@@ -3394,7 +3393,7 @@ img.worst-day-text {
     display: flex;
 }
 
- 
+
 
 .freeform-img {
     position: relative;
@@ -5712,16 +5711,21 @@ a.button.border-only {
         left: auto;
     }
 
+    .right-wordsendcycal.abslut {
+        width: 188px;
+    }
 }
 
 @media (max-width: 1200px) {
     .book-banner {
         grid-template-columns: 1fr;
     }
-.progress-content { 
-    grid-template-columns: repeat(2, 1fr); 
-    gap: 60px 0px; 
-}
+
+    .progress-content {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 60px 0px;
+    }
+
     .flexwordsendcycal {
         grid-template-columns: 100%;
     }
@@ -5882,9 +5886,32 @@ a.button.border-only {
     body {
         font-size: 14px;
     }
-section.recommended-readinglist {
-    padding: 50px 0px;
+    .postcard-row {
+    grid-template-columns: 1fr;
 }
+.postcard-item1 {
+    height: auto;
+}
+.postcard-item1 img {
+    height: auto;
+}
+.fore-grid {
+    grid-template-columns: 1fr 1fr;
+}
+.flexchuse {
+    flex-wrap: wrap;
+}
+    .right-wordsendcycal.abslut {
+        position: relative;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+    }
+
+    section.recommended-readinglist {
+        padding: 50px 0px;
+    }
+
     .bookssection .left-images {
         height: auto;
     }
@@ -6037,7 +6064,7 @@ section.recommended-readinglist {
         display: none;
     }
 
-   
+
 
     .left-area {
         width: 100%;
@@ -6094,7 +6121,10 @@ section.recommended-readinglist {
         flex-wrap: wrap;
         gap: 45px 6px;
     }
-
+.flexfield
+ {
+    grid-template-columns: 1fr;
+}
     .testimonial-text {
         width: 100%;
     }
@@ -6120,15 +6150,60 @@ section.recommended-readinglist {
 
 
 @media (max-width: 767px) {
+    .healing-inner-content {
+    width: 100%;
+    padding: 0px 20px;
+}
+.fore-grid {
+    grid-template-columns: 1fr;
+}
     .bookssection .left-images {
         height: auto;
     }
-    .image-c { 
-    height: 100%; 
+.resourcsertymain {
+    grid-template-columns: 1fr;
 }
-.self-development-content h3 { 
-    font-size: 1.3rem;
+.leftresourcsertymain {
+    position: relative;
+    top: 0;
+    min-height: auto;
 }
+
+.lfrtyremains {
+    grid-template-columns: 1fr;
+}
+
+.freeform-img {
+    min-height: auto;
+    height: auto;
+   order: 1;
+}
+
+.freeform-img img {
+    position: relative;
+
+    height: auto;
+
+}
+
+.formleffieldds{
+    order: 2;
+}
+
+
+    .podcast-row {
+    flex-wrap: wrap;
+}
+.mentor-wrapper {
+    flex-wrap: wrap;
+}
+   .sesson-images {
+        margin-bottom: 15px;
+    }
+    .self-development-content h3 {
+        font-size: 1.3rem;
+    }
+
     body {
         font-size: 13.3px;
     }
@@ -6378,7 +6453,7 @@ section.recommended-readinglist {
         padding: 60px 0px;
     }
 
-   
+
 
     .testimonial-card {
         width: 100%;
@@ -6413,9 +6488,7 @@ section.recommended-readinglist {
         position: static;
     }
 
-    .right-wordsendcycal {
-        width: 85%;
-    }
+   
 
     .contact-into {
         padding: 0;
@@ -6425,7 +6498,10 @@ section.recommended-readinglist {
         padding: 25px;
     }
 
-
+    .card-image-grey-bg
+ {
+        min-height: auto;
+    }
 
     .boximg.content {
         text-align: center;
@@ -6435,7 +6511,11 @@ section.recommended-readinglist {
     .boximg.shine-effect {
         height: 350px;
     }
-
+    .image-c
+ {
+        height: auto;
+        position: relative;
+    }
     .experience-badge span {
         font-size: 65px;
         margin-bottom: 30px;
@@ -6474,23 +6554,39 @@ section.recommended-readinglist {
 }
 
 @media (max-width: 500px) {
-.flexbuttoons { 
-    gap: 20px 0px;
+    .flexbuttoons {
+        gap: 20px 0px;
+        flex-wrap: wrap;
+    }
+    .righttresourcsertymain h2 {
+    font-size: 2em;
+}
+.right-wordsendcycal {
+        width: 100%;
+    }
+
+    .form .row input {
+    flex: 100%;
+}
+.form .row {
     flex-wrap: wrap;
 }
-section.book-section.podcast-banner { 
-    padding-bottom: 0px;
-}
-.fucherserlist { 
-        grid-template-columns: 1fr; 
+    section.book-section.podcast-banner {
+        padding-bottom: 0px;
     }
-.flexbuttoons a.button { 
-    width: 100%;
-} 
+
+    .fucherserlist {
+        grid-template-columns: 1fr;
+    }
+
+    .flexbuttoons a.button {
+        width: 100%;
+    }
 
     .progress-content {
-        grid-template-columns: repeat(1, 1fr); 
+        grid-template-columns: repeat(1, 1fr);
     }
+
     .formcontainer input[type="text"],
     .formcontainer input[type="email"] {
         width: 100%;
@@ -6518,11 +6614,12 @@ section.book-section.podcast-banner {
         padding: 20px 20px;
     }
 
-.book-col1 { 
-    min-height: 322px;
-}
-.book-col2 h2 {
-    font-size: 2em;
-    margin-bottom: 10px;
-}
+    .book-col1 {
+        min-height: 322px;
+    }
+
+    .book-col2 h2 {
+        font-size: 2em;
+        margin-bottom: 10px;
+    }
 }

@@ -788,6 +788,19 @@ a.detail2 {
     font-family: "Poppins", sans-serif;
 }
 
+.img-box::after {
+    content: "";
+    position: absolute;
+    background-color: #4a276b;
+    z-index: 0;
+    width: 106%;
+    height: 106%;
+    inset: 0;
+    margin: 0 auto;
+    top: -3%;
+    left: -3%;
+    border-radius: 10px;
+}
 
 .img-box {
     position: relative;
@@ -795,24 +808,15 @@ a.detail2 {
 
 .img-box .image-2 {
     position: relative;
-    border-radius: 300px;
+    border-radius: 7px;
     width: 450px;
     height: 450px;
     max-width: 450px;
     max-height: 450px;
     object-fit: cover;
+    z-index: 1;
 }
 
-.img-box .background {
-    border-radius: 300px;
-    width: 450px;
-    height: 450px;
-    max-width: 450px;
-    max-height: 450px;
-    position: absolute;
-    background: #dabba2;
-    inset: -9% 0% 0% 3%;
-}
 
 /************audio-player *****************/
 section.audio-section {
@@ -1048,7 +1052,7 @@ section.into-section {
     margin: 10px 0px;
 }
 
-.kanneylessloren ul li::after {
+.kanneylessloren ul li::after,ul.doterd li::after {
     position: absolute;
     content: "";
     background-color: #BBA056;
@@ -1058,6 +1062,17 @@ section.into-section {
     top: 8px;
     border-radius: 15px;
 }
+
+ul.doterd {
+    padding-left: 20px;
+    margin: 10px 0px; 
+    margin-top: 15px;
+}
+ul.doterd li { 
+    position: relative;
+}
+
+
 
 .kanneylessloren ul li {
     margin-bottom: 10px;
@@ -1614,10 +1629,10 @@ h5.tag-line::after {
     color: #ffffff;
 }
 
-.might-feel-row h4{
+.might-feel-row h4 {
     text-align: center;
     margin-bottom: 20px;
-     color: #ffffff;
+    color: #ffffff;
 }
 
 section.into-section-white-bg {
@@ -1630,11 +1645,11 @@ section.into-section-white-bg h3 {
     text-align: center;
 }
 
- section.into-section-white-bg p {
-    color: #434343; 
+section.into-section-white-bg p {
+    color: #434343;
 }
 
- section.into-section-white-bg .wellness-col.bb-1 {
+section.into-section-white-bg .wellness-col.bb-1 {
     background-color: #ffffff;
 }
 
@@ -1656,6 +1671,7 @@ section.into-section-white-bg h3 {
     color: #000000;
 
 }
+
 .healing-table td .button {
     margin-top: 0;
 }
@@ -1667,14 +1683,16 @@ section.into-section-white-bg h3 {
 .healing-table th {
     padding: 15px;
 }
+
 .healing-table td {
     padding: 15px;
 }
+
 .healing-table table {
     margin-bottom: 20px;
 }
 
-.healing-table p.bold { 
+.healing-table p.bold {
     text-align: left;
 }
 
@@ -1945,9 +1963,23 @@ h5.info-title {
 }
 
 .img-contant {
-    text-align: left;
-    margin-top: 20px;
+    position: absolute;
+    z-index: 1;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #0b0b0b8c;
+    text-align: center;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
+
+.img-contant h5 ,.img-contant p {
+    color: #ffffff;
+}
+
 
 .service-item-main {
     padding: 30px;
@@ -4567,7 +4599,7 @@ section.postcard {
 }
 
 
- 
+
 
 .fore-grid-bg {
     padding: 60px 0;
@@ -5351,7 +5383,7 @@ a.more-link.button {
 
 
 .divider {
-    color: #e4c3ca;
+    color: #41197a;
 }
 
 .images {
@@ -6047,7 +6079,7 @@ a.button.border-only {
         height: auto;
     }
 
- 
+
 
     .flexchuse {
         flex-wrap: wrap;
@@ -6298,8 +6330,12 @@ a.button.border-only {
     .testimonia-row {
         grid-template-columns: 100%;
     }
-
-
+.mentor-wrapper,.lastcontnt { 
+    width: 100%; 
+}
+.lightbox { 
+    width: 90%; 
+}
 
 }
 
@@ -6310,8 +6346,10 @@ a.button.border-only {
         width: 100%;
         padding: 0px 20px;
     }
+.lastcontnt {
+    text-align: center;
+}
 
-  
     .bookssection .left-images {
         height: auto;
     }
@@ -6480,6 +6518,7 @@ a.button.border-only {
     .award-badge {
         padding: 24px 19px;
         width: 70%;
+        flex-direction: column;
     }
 
     .video-box {
@@ -6552,7 +6591,6 @@ a.button.border-only {
         width: 100%;
     }
 
-    .img-box .background,
     .img-box .image-2 {
         width: 300px;
         height: 300px;
@@ -6611,7 +6649,7 @@ a.button.border-only {
 
     .video-box {
         margin-top: 30px;
-        width: 100%;
+        width: auto;
         height: auto;
     }
 

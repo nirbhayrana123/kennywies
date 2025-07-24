@@ -121,15 +121,10 @@ $(document).ready(function () {
     }
   });
 
-
-
-
-
-
-
-
-
-  AOS.init();
+ AOS.init();
+ 
+  
+     
 
   //////////////////////cont////////////
   // const counters = document.querySelectorAll('.count');
@@ -391,3 +386,26 @@ $(document).ready(function () {
     });
   });
 });
+
+
+
+
+
+
+
+
+
+const modal = document.getElementById("myLightbox");
+        const img = document.getElementById("myImage");
+        const modalImg = document.getElementById("imgExpanded");
+
+        img.onclick = () => {
+            modal.style.display = "block";
+            modalImg.src = img.src;
+        };
+
+        modal.onclick = e => {
+            if (e.target === modal || e.target.classList.contains("close3")) {
+                modal.style.display = "none";
+            }
+        };

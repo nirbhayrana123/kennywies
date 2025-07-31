@@ -1357,7 +1357,7 @@ section.into-section .wellness-col {
 }
 
 .swiper-pagination-bullet-active {
-    background: #BBA056;
+    background: #512570;
 }
 
 .mySwiper .swiper-pagination.swiper-pagination-clickable.swiper-pagination-bullets.swiper-pagination-horizontal {
@@ -2037,8 +2037,7 @@ h5.info-title {
 
 .healing-inner-pages::after {
     content: "";
-    background-color:
-        color-mix(in srgb, #512570, transparent 50%);
+    background-color: #00000057;
     position: absolute;
     inset: 0;
 }
@@ -2203,7 +2202,10 @@ h5.info-title {
     position: absolute;
     right: 20px;
 }
-
+.industry-card a:hover {
+    color: #ffffff; 
+    background-color: #512570c5;
+}
 .your-journey-Self-love {
     position: relative;
     align-items: start;
@@ -2229,7 +2231,7 @@ section.Self-love {
 
 section.Self-love.faqbg {
     background-color: #f9f9f9;
-    padding: 60px 0px;
+    padding: 60px 0;
 }
 
 .answer {
@@ -3736,7 +3738,10 @@ section.mb-4 {
 }
 
 .secondsection {
-    margin-top: 40px;
+    padding: 40px 40px 40px 50px;
+    background-color: #f8f1ed;
+    margin-top: 10px;
+    border-radius: 16px;
 }
 
 .card-section.sticky .card-image-grey-bg {
@@ -5335,7 +5340,7 @@ section.sourses-section .right-content h3 {
 .feature-icon span {
     width: 28px;
     height: 28px;
-    background-color: #BBA056;
+    background-color: #512570;
     border-radius: 50%;
     color: #fff;
     font-size: 18px;
@@ -5355,8 +5360,9 @@ section.sourses-section .right-content h3 {
 }
 
 .feature-icon {
-    background-color: #BBA05673;
-    display: flex;
+    background-color: #51257057;
+    display: flex
+;
     justify-content: center;
     align-items: center;
     text-align: center;

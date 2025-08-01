@@ -6506,8 +6506,8 @@ a.button.border-only {
         padding: 50px 5%;
     }
 
-    .flex-who-we-are {
-        gap: 90px;
+  .flex-who-we-are {
+        gap: 205px;
     }
 
     .left-realpandemic {
@@ -6569,8 +6569,8 @@ a.button.border-only {
 
     .video-boxes {
         width: 300px;
+        bottom: -200px;
     }
-
 
     .left-about,
     .right-about,
@@ -6835,6 +6835,15 @@ a.button.border-only {
         width: 155px;
         border: 6px solid #fff;
         bottom: -40px;
+    }
+
+.video-boxes.mt22{
+        width: 195px;
+        border: 6px solid #fff;
+        bottom: -140px;
+    }
+.flex-who-we-are {
+        gap: 170px;
     }
 
     .button {
